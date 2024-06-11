@@ -10,20 +10,14 @@ Config Dotfiles
     git clone https://github.com/tamerhayek/.dotfiles
     ```
 
-2. Set permissions on `~/.dotfiles/scripts` files
+2. Set permissions on `~/.dotfiles/setup.sh` files
 
     ```sh
-    chmod +x ~/.dotfiles/scripts/*
+    chmod +x ~/.dotfiles/setup.sh
     ```
 
-3. Run `~/.dotfiles/scripts/install.sh` to install os packages
+3. Run `~/.dotfiles/setup.sh`
 
     ```sh
-    ~/.dotfiles/scripts/install.sh
-    ```
-
-4. Run `~/.dotfiles/scripts/dotfiles.sh` using dotfiles alias
-
-    ```sh
-    ~/.dotfiles/scripts/dotfiles.sh
+    ~/.dotfiles/setup.sh
     ```
