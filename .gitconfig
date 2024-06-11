@@ -1,0 +1,12 @@
+[user]
+	name = tamerhayek
+	email = dev@tamerhayek.com
+[core]
+	editor = code --wait
+[alias]
+	lg = log --oneline --all --graph
+	st = status -s
+	unstage = restore --staged .
+[init]
+	defaultBranch = main
+
