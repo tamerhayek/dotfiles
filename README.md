@@ -10,14 +10,20 @@ Config Dotfiles
     git clone https://github.com/tamerhayek/.dotfiles
     ```
 
-2. Set permissions on `~/.dotfiles/setup.sh` files
+2. Set permissions on `~/.dotfiles/scripts/*` files
 
     ```sh
-    chmod +x ~/.dotfiles/setup.sh
+    chmod +x ~/.dotfiles/scripts/*
     ```
 
-3. Run `~/.dotfiles/setup.sh`
+3. Run `~/.dotfiles/scripts/setup.sh`
 
     ```sh
-    ~/.dotfiles/setup.sh
+    ~/.dotfiles/scripts/setup.sh
+    ```
+
+    Or use `~/.dotfiles/scripts/dotfiles.sh` to only copy all files in `~/.dotfiles`
+
+    ```sh
+    ~/.dotfiles/scripts/dotfiles.sh
     ```
