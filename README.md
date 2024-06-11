@@ -7,26 +7,23 @@ Config Dotfiles
 1. Clone [.dotfiles](https://github.com/tamerhayek/dotfiles) inside your home directory
 
     ```sh
-    git clone https://github.com/tamerhayek/dotfiles
+    git clone https://github.com/tamerhayek/.dotfiles
     ```
 
-2. Set permissions on `~/.dotfiles/sync.sh`
+2. Set permissions on `~/.dotfiles/scripts` files
 
     ```sh
-    chmod +x ~/.dotfiles/sync.sh
+    chmod +x ~/.dotfiles/scripts/*
     ```
 
-3. Run `~/.dotfiles/sync.sh` using dotfiles alias
+3. Run `~/.dotfiles/scripts/install.sh` to install os packages
 
     ```sh
-    dotfiles
+    ~/.dotfiles/scripts/install.sh
     ```
 
-    Created alias in `~/.zshrc` which calls `~/.dotfiles/sync.sh`.
+4. Run `~/.dotfiles/scripts/dotfiles.sh` using dotfiles alias
 
     ```sh
-    alias dotfiles='~/.dotfiles/sync.sh'
+    ~/.dotfiles/scripts/dotfiles.sh
     ```
-
-4. All the files inside `~/.dotfiles/data/` will be synced automatically.
-
