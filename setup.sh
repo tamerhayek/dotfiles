@@ -49,8 +49,12 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 	brew cleanup
 
 	# Install Node
-	echo "Finding NVM"
+	echo "Install Node from NVM"
 	export NVM_DIR=~/.nvm
 	source ~/.nvm/nvm.sh
 	nvm install
+
+	# Install global npm packages
+	echo "Installing global npm packages..."
+	cat ~/.dotfiles/npm.txt | xargs npm install -g
 fi
