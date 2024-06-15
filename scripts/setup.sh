@@ -10,6 +10,22 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 	# Linux
 	echo "Syncing Linux..."
 
+	PS3="Select the distro: "
+	select opt in Fedora Quit; do
+		case $opt in
+			Fedora)
+				echo "Syncing $opt..."
+				break
+				;;
+			Quit)
+				break
+				;;
+			*)
+				echo "Invalid option $REPLY"
+				;;
+		esac
+	done
+
 	echo ""
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	# Mac OSX
