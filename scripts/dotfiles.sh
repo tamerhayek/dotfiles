@@ -7,7 +7,9 @@ BACKUP_TIME=$(date "+%Y_%m_%d_%H%M%S")
 echo "Backing up ~/.dotfiles to ~/.dotfiles/backups/data-$BACKUP_TIME..."
 mkdir -p ~/.dotfiles/backups/data-$BACKUP_TIME
 mkdir -p ~/.dotfiles/backups/data-$BACKUP_TIME/.config
-cp -r ~/.config/alacritty ~/.dotfiles/backups/data-$BACKUP_TIME/.config/alacritty
+cp -r ~/.config/alacritty ~/.dotfiles/backups/data-$BACKUP_TIME/.config/alacritty/
+cp -r ~/.config/fastfetch ~/.dotfiles/backups/data-$BACKUP_TIME/.config/fastfetch/
+cp -r ~/.config/lsd ~/.dotfiles/backups/data-$BACKUP_TIME/.config/lsd/
 cp -r ~/.gitconfig ~/.dotfiles/backups/data-$BACKUP_TIME
 cp -r ~/.zshrc ~/.dotfiles/backups/data-$BACKUP_TIME
 cp -r ~/.p10k.zsh ~/.dotfiles/backups/data-$BACKUP_TIME
