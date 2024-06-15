@@ -49,4 +49,10 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 	# Install global npm packages
 	echo "Installing global npm packages..."
 	cat ~/.dotfiles/npm.txt | xargs npm install -g
+
+	# Install gh extensions
+
+	gh extension install dlvhdr/gh-dash
+	gh extension install meiji163/gh-notify
+	gh extension install vilmibm/gh-screensaver
 fi
