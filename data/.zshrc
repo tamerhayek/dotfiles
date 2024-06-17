@@ -2,17 +2,45 @@ echo ""
 
 fastfetch
 
+# Colors for terminal echo
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
 echo ""
 
 echo "--------------------------"
 
 echo ""
 
-echo "Github Notifications"
+echo "${RED}Github Notifications${NC}"
 
 echo ""
 
 gh notify -s
+
+echo ""
+
+echo "--------------------------"
+
+echo ""
+
+echo "${RED}Github Issues${NC}"
+
+echo ""
+
+gh search issues --assignee=@me --state=open
+
+echo ""
+
+echo "--------------------------"
+
+echo ""
+
+echo "${RED}Github PRs${NC}"
+
+echo ""
+
+gh search prs --assignee=@me --state=open
 
 echo ""
 
