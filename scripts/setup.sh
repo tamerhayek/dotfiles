@@ -39,6 +39,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 	else
 		echo "Homebrew is installed!"
 		brew update
+		brew upgrade
 	fi
 
 	echo ""
