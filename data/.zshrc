@@ -125,9 +125,16 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls='lsd'
-alias vim='nvim'
 alias c='clear'
+alias h='history'
+alias ch='history -p'
+alias vim='nvim'
+alias vi='nvim'
+alias n='nvim'
+alias p='pnpm'
 alias z='zellij'
+alias dotfiles='~/.dotfiles/scripts/dotfiles.sh'
+alias setup='~/.dotfiles/scripts/setup.sh'
 
 # Shell integrations
 eval "$(fzf --zsh)"
