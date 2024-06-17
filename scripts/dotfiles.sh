@@ -35,3 +35,8 @@ echo "Done!"
 echo "Copying ~/.dotfiles/data/.nvmrc to ~/.nvmrc..."
 cp ~/.dotfiles/data/.nvmrc ~/.nvmrc
 echo "Done!"
+
+if [ -z "$1" ];
+  then
+    exec /bin/zsh
+fi

@@ -53,7 +53,7 @@ fi
 
 echo ""
 
-~/.dotfiles/scripts/dotfiles.sh
+~/.dotfiles/scripts/dotfiles.sh source
 
 echo ""
 
@@ -98,3 +98,9 @@ gh extension install meiji163/gh-notify
 gh extension install vilmibm/gh-screensaver
 
 echo ""
+
+echo "Done!"
+
+echo ""
+
+exec /bin/zsh
