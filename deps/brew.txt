@@ -10,7 +10,7 @@ gimp
 stats
 fastfetch
 bat
-lsd
+eza
 inkscape
 keka
 latest

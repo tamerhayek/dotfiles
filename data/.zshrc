@@ -123,8 +123,18 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
+# Eza
+
+eza_params=('--git' '--icons' '--classify' '--group-directories-first' '--time-style=long-iso' '--group' '--color-scale')
+
 # Aliases
-alias ls='lsd'
+alias ls='eza $eza_params'
+alias l='eza --git-ignore $eza_params'
+alias ll='eza --all --header --long $eza_params'
+alias llm='eza --all --header --long --sort=modified $eza_params'
+alias la='eza -lbhHigUmuSa'
+alias lt='eza --tree $eza_params'
+alias tree='eza --tree $eza_params'
 alias c='clear'
 alias h='history'
 alias ch='history -p'
