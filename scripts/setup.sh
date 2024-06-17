@@ -70,6 +70,14 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 
 	gh config set editor code
 
+	# gh aliases
+
+	gh alias delete --all
+
+	gh alias set n 'notify -s'
+	gh alias set i 'search issues --assignee=@me --state=open'
+	gh alias set p 'search prs --assignee=@me --state=open'
+
 	# Install gh extensions
 
 	gh extension install dlvhdr/gh-dash
