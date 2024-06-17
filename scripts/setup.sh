@@ -45,7 +45,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 
 	# Install brew packages
 	echo "Installing brew packages..."
-	xargs brew install <~/.dotfiles/brew.txt
+	xargs brew install <~/.dotfiles/deps/brew.txt
 
 	brew autoremove
 	brew cleanup
@@ -73,7 +73,7 @@ echo ""
 
 # Install global npm packages
 echo "Installing global npm packages..."
-cat ~/.dotfiles/npm.txt | xargs npm install -g
+cat ~/.dotfiles/deps/npm.txt | xargs npm install -g
 
 echo ""
 
