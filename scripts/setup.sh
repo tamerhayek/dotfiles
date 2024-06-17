@@ -2,7 +2,7 @@ echo "Machine Setup"
 
 echo ""
 
-~/.dotfiles/scripts/dotfiles.sh
+echo "Installing OS deps..."
 
 echo ""
 
@@ -25,8 +25,6 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 				;;
 		esac
 	done
-
-	echo ""
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	# Mac OSX
 	echo "Syncing MacOS..."
@@ -51,36 +49,52 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 
 	brew autoremove
 	brew cleanup
-
-	echo ""
-
-	# Install Node
-	echo "Install Node from NVM"
-	export NVM_DIR=~/.nvm
-	source ~/.nvm/nvm.sh
-	nvm install
-
-	echo ""
-
-	# Install global npm packages
-	echo "Installing global npm packages..."
-	cat ~/.dotfiles/npm.txt | xargs npm install -g
-
-	# gh config
-
-	gh config set editor code
-
-	# gh aliases
-
-	gh alias delete --all
-
-	gh alias set n 'notify -s'
-	gh alias set i 'search issues --assignee=@me --state=open'
-	gh alias set p 'search prs --assignee=@me --state=open'
-
-	# Install gh extensions
-
-	gh extension install dlvhdr/gh-dash
-	gh extension install meiji163/gh-notify
-	gh extension install vilmibm/gh-screensaver
 fi
+
+echo ""
+
+~/.dotfiles/scripts/dotfiles.sh
+
+echo ""
+
+# OS agnostic commands
+
+echo "Configuring tools..."
+
+echo ""
+
+# Install Node
+echo "Install Node from NVM..."
+export NVM_DIR=~/.nvm
+source ~/.nvm/nvm.sh
+nvm install
+
+echo ""
+
+# Install global npm packages
+echo "Installing global npm packages..."
+cat ~/.dotfiles/npm.txt | xargs npm install -g
+
+echo ""
+
+# gh config
+
+echo "Configuring gh..."
+
+gh config set editor code
+
+# gh aliases
+
+gh alias delete --all
+
+gh alias set n 'notify -s'
+gh alias set i 'search issues --assignee=@me --state=open'
+gh alias set p 'search prs --assignee=@me --state=open'
+
+# Install gh extensions
+
+gh extension install dlvhdr/gh-dash
+gh extension install meiji163/gh-notify
+gh extension install vilmibm/gh-screensaver
+
+echo ""

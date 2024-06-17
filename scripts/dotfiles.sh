@@ -1,8 +1,3 @@
-echo "Machine Setup"
-
-echo ""
-
-echo "Backing up dotfiles to ~/.dotfiles/backups/data-<time>..."
 BACKUP_TIME=$(date "+%Y_%m_%d_%H%M%S")
 echo "Backing up ~/.dotfiles to ~/.dotfiles/backups/data-$BACKUP_TIME..."
 mkdir -p ~/.dotfiles/backups/data-$BACKUP_TIME
