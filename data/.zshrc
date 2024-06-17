@@ -1,4 +1,20 @@
+echo ""
+
 fastfetch
+
+echo ""
+
+echo "--------------------------"
+
+echo ""
+
+echo "Github Notifications"
+
+echo ""
+
+gh notify -s
+
+echo ""
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
