@@ -90,9 +90,9 @@ gh config set editor code
 
 gh alias delete --all
 
-gh alias set n 'notify -s'
-gh alias set i 'search issues --assignee=@me --state=open'
-gh alias set p 'search prs --assignee=@me --state=open'
+gh alias set n 'notify -w'
+gh alias set i 'issue list'
+gh alias set p 'pr list'
 
 # Install gh extensions
 

@@ -27,7 +27,7 @@ echo "${RED}Github Notifications${NC}"
 
 echo ""
 
-gh n
+gh notify -sn 10
 
 echo ""
 
@@ -39,7 +39,7 @@ echo "${RED}Github Issues${NC}"
 
 echo ""
 
-gh i
+gh search issues --assignee=@me --state=open
 
 echo ""
 
@@ -51,7 +51,7 @@ echo "${RED}Github PRs${NC}"
 
 echo ""
 
-gh p
+gh search prs --assignee=@me --state=open
 
 echo ""
 
