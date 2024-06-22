@@ -96,9 +96,10 @@ gh alias set p 'pr list'
 
 # Install gh extensions
 
+gh extension list | xargs gh remove
+
 gh extension install dlvhdr/gh-dash
 gh extension install meiji163/gh-notify
-gh extension install vilmibm/gh-screensaver
 
 echo ""
 
