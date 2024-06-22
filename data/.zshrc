@@ -4,57 +4,6 @@ fastfetch
 
 echo ""
 
-echo "--------------------------"
-
-echo ""
-
-if [[ "$OSTYPE" == "darwin"* ]]; then
-	# Mac OSX
-	brew update
-fi
-
-echo ""
-
-echo "--------------------------"
-
-echo ""
-
-# Colors for terminal echo
-RED='\033[0;31m'
-NC='\033[0m' # No Color
-
-echo "${RED}Github Notifications${NC}"
-
-echo ""
-
-gh notify -sn 10
-
-echo ""
-
-echo "--------------------------"
-
-echo ""
-
-echo "${RED}Github Issues${NC}"
-
-echo ""
-
-gh search issues --assignee=@me --state=open
-
-echo ""
-
-echo "--------------------------"
-
-echo ""
-
-echo "${RED}Github PRs${NC}"
-
-echo ""
-
-gh search prs --assignee=@me --state=open
-
-echo ""
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -156,6 +105,10 @@ alias p='pnpm'
 alias z='zellij'
 alias dotfiles='~/.dotfiles/scripts/dotfiles.sh'
 alias setup='~/.dotfiles/scripts/setup.sh'
+alias status='~/.dotfiles/scripts/status.sh'
+alias s='~/.dotfiles/scripts/status.sh'
+alias i='~/.dotfiles/scripts/status.sh'
+alias info='~/.dotfiles/scripts/status.sh'
 
 # Shell integrations
 eval "$(fzf --zsh)"
