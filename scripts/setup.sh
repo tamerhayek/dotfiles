@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 echo "Machine Setup"
 
 echo ""
@@ -104,4 +106,4 @@ echo "Done!"
 
 echo ""
 
-exec /bin/zsh
+source ~/.zshrc

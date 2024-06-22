@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 BACKUP_TIME=$(date "+%Y_%m_%d_%H%M%S")
 echo "Backing up ~/.dotfiles to ~/.dotfiles/backups/data-$BACKUP_TIME..."
 mkdir -p ~/.dotfiles/backups/data-$BACKUP_TIME
@@ -35,7 +37,4 @@ echo "Copying ~/.dotfiles/data/.nvmrc to ~/.nvmrc..."
 cp ~/.dotfiles/data/.nvmrc ~/.nvmrc
 echo "Done!"
 
-if [ -z "$1" ];
-  then
-    exec /bin/zsh
-fi
+source ~/.zshrc
