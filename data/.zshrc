@@ -103,13 +103,10 @@ alias vi='nvim'
 alias n='nvim'
 alias p='pnpm'
 alias z='zellij'
-alias u='brew update && brew upgrade --cask && brew cleanup && brew autoremove'
+alias u='brew update && brew upgrade --cask && xargs brew install <~/.dotfiles/deps/brew.txt && brew cleanup && brew autoremove'
 alias dotfiles='~/.dotfiles/scripts/dotfiles.sh'
 alias setup='~/.dotfiles/scripts/setup.sh'
 alias status='~/.dotfiles/scripts/status.sh'
-alias s='~/.dotfiles/scripts/status.sh'
-alias i='~/.dotfiles/scripts/status.sh'
-alias info='~/.dotfiles/scripts/status.sh'
 
 # Shell integrations
 eval "$(fzf --zsh)"
