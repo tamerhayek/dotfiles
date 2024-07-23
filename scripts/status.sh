@@ -8,7 +8,22 @@ echo "--------------------------"
 
 echo ""
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+	# Linux
+	PS3="Select the distro: "
+	select opt in Fedora Quit; do
+		case $opt in
+			Fedora)
+				sudo dnf update
+				sudo flatpak update
+				break
+				;;
+			*)
+				echo "Invalid option $REPLY"
+				;;
+		esac
+	done
+elif [[ "$OSTYPE" == "darwin"* ]]; then
 	# Mac OSX
 	brew update
 fi

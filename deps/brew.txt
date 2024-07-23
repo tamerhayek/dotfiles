@@ -47,5 +47,4 @@ openjdk
 wget
 tldr
 thefuck
-openjdk
 zellij
