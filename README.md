@@ -16,7 +16,13 @@ Config Dotfiles
     chmod +x ~/.dotfiles/scripts/*
     ```
 
-3. Run `~/.dotfiles/scripts/setup.sh`
+3. (Optional) Install `zsh` and replace `bash`
+
+    ```sh
+    ~/.dotfiles/scripts/zsh-install.sh
+    ```
+
+4. Run `~/.dotfiles/scripts/setup.sh`
 
     ```sh
     ~/.dotfiles/scripts/setup.sh
