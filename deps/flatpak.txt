@@ -1,1 +1,2 @@
 io.missioncenter.MissionCenter
+org.localsend.localsend_app
