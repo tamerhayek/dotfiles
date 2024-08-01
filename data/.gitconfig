@@ -9,4 +9,5 @@
 	unstage = restore --staged .
 [init]
 	defaultBranch = main
-
+[pull]
+	rebase = true
