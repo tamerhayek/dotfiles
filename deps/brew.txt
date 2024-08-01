@@ -48,3 +48,5 @@ wget
 tldr
 thefuck
 zellij
+go
+python3
