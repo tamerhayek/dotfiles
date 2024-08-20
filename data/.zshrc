@@ -108,7 +108,7 @@ alias setup='~/.dotfiles/scripts/setup.sh'
 alias status='~/.dotfiles/scripts/status.sh'
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-  if [ which dnf ]; then
+  if [ "$(which dnf)" != "" ]; then
 	  alias update='sudo dnf update && sudo dnf upgrade && sudo xargs dnf install <~/.dotfiles/deps/fedora.txt && sudo dnf autoremove'
   fi
 elif [[ "$OSTYPE" == "darwin"* ]]; then
