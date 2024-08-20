@@ -7,7 +7,6 @@ balenaetcher
 crystalfetch
 font-meslo-lg-nerd-font
 gimp
-stats
 fastfetch
 bat
 eza
@@ -50,3 +49,4 @@ thefuck
 zellij
 go
 python3
+zed
