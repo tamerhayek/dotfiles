@@ -14,56 +14,44 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 
 	echo ""
 
-	PS3="Select the distro: "
-	select opt in Fedora; do
-		case $opt in
-			Fedora)
-				echo ""
+	if [ "$(which dnf)" != "" ]; then
+		echo "Syncing Fedora..."
 
-				echo "Syncing $opt..."
+		echo ""
 
-				echo ""
+		echo "Updating packages..."
+		sudo dnf update
 
-				echo "Updating packages..."
-				sudo dnf update
+		echo ""
 
-				echo ""
+		echo "Installing repositories..."
+		sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-				echo "Installing repositories..."
-				sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+		echo "Installing external repositories..."
+		sudo dnf install dnf-plugins-core
+		# Brave Browser
+		sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+		sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+		#VSCode
+		sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+		echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+		#NVM
+		curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
-				echo "Installing external repositories..."
-				sudo dnf install dnf-plugins-core
-				# Brave Browser
-				sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-				sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-				#VSCode
-				sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-				echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
-				#NVM
-				curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+		echo "Installing packages..."
+		xargs sudo dnf install < ~/.dotfiles/deps/dnf.txt
 
-				echo "Installing packages..."
-				xargs sudo dnf install < ~/.dotfiles/deps/dnf.txt
+		echo "Installing flatpak packages..."
+		sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+		sudo flatpak update
+		xargs sudo flatpak install -y < ~/.dotfiles/deps/flatpak.txt
 
-				echo "Installing flatpak packages..."
-				sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-				sudo flatpak update
-				xargs sudo flatpak install -y < ~/.dotfiles/deps/flatpak.txt
+		echo ""
 
-				echo ""
-
-				echo "Configuring some tools"
-				# VSCode
-				sudo chown -R $(whoami) /usr/share/code
-
-				break
-				;;
-			*)
-				echo "Invalid option $REPLY"
-				;;
-		esac
-	done
+		echo "Configuring some tools"
+		# VSCode
+		sudo chown -R $(whoami) /usr/share/code
+	fi
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	# Mac OSX
 	echo "Syncing MacOS..."
