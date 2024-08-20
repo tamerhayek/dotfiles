@@ -103,7 +103,7 @@ alias vi='nvim'
 alias n='nvim'
 alias p='pnpm'
 alias z='zellij'
-alias u='brew update && brew upgrade && xargs brew install <~/.dotfiles/deps/brew.txt && brew cleanup && brew autoremove'
+alias update='brew update && brew upgrade && xargs brew install <~/.dotfiles/deps/brew.txt && brew cleanup && brew autoremove'
 alias dotfiles='~/.dotfiles/scripts/dotfiles.sh'
 alias setup='~/.dotfiles/scripts/setup.sh'
 alias status='~/.dotfiles/scripts/status.sh'
@@ -113,6 +113,7 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(thefuck --alias)"
 
+# NVM
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -145,6 +146,4 @@ load-nvmrc
 
 export PATH=$PATH:$HOME/go/bin
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
