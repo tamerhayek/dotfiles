@@ -103,10 +103,17 @@ alias vi='nvim'
 alias n='nvim'
 alias p='pnpm'
 alias z='zellij'
-alias update='brew update && brew upgrade && xargs brew install <~/.dotfiles/deps/brew.txt && brew cleanup && brew autoremove'
 alias dotfiles='~/.dotfiles/scripts/dotfiles.sh'
 alias setup='~/.dotfiles/scripts/setup.sh'
 alias status='~/.dotfiles/scripts/status.sh'
+
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  if [ which dnf ]; then
+	  alias update='sudo dnf update && sudo dnf upgrade && sudo xargs dnf install <~/.dotfiles/deps/fedora.txt && sudo dnf autoremove'
+  fi
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  alias update='brew update && brew upgrade && xargs brew install <~/.dotfiles/deps/brew.txt && brew cleanup && brew autoremove'
+fi
 
 # Shell integrations
 eval "$(fzf --zsh)"
