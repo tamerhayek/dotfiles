@@ -33,3 +33,5 @@ Config Dotfiles
     ```sh
     ~/.dotfiles/scripts/dotfiles.sh
     ```
+
+    Remember to delete files or folder before running `dotfiles.sh` in order to create symlinks
