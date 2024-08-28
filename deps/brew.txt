@@ -23,17 +23,11 @@ brave-browser
 discord
 firefox
 google-chrome
-postman
-postman-agent
 spotify
 telegram
-whatsapp
 homebrew/cask/transmission
-proton-pass
-proton-mail
 proton-drive
 protonvpn
-protonmail-import-export
 nvm
 neovim
 speedtest-cli
