@@ -15,6 +15,7 @@ keka
 latest
 linearmouse
 obs
+rectangle
 visual-studio-code
 vlc
 appcleaner
