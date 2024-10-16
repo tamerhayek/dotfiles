@@ -107,6 +107,11 @@ alias dotfiles='~/.dotfiles/scripts/dotfiles.sh'
 alias setup='~/.dotfiles/scripts/setup.sh'
 alias status='~/.dotfiles/scripts/status.sh'
 
+# Git
+alias main="git switch main"
+alias staging="git switch staging"
+alias merge-main="main && git merge staging && staging"
+
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   if [ "$(which dnf)" != "" ]; then
 	  alias update='sudo dnf update && sudo dnf upgrade && sudo xargs dnf install <~/.dotfiles/deps/fedora.txt && sudo dnf autoremove'
