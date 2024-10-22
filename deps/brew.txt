@@ -6,7 +6,7 @@ balenaetcher
 brave-browser
 btop
 discord
-docker
+homebrew/cask/docker
 docker-completion
 eza
 fastfetch
