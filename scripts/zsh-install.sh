@@ -4,20 +4,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 
 	echo ""
 
-	PS3="Select the distro: "
-	select opt in Fedora; do
-		case $opt in
-			Fedora)
-				echo ""
-
-				sudo dnf install zsh
-				chsh -s $(which zsh)
-
-				break
-				;;
-			*)
-				echo "Invalid option $REPLY"
-				;;
-		esac
-	done
+	if [ "$(which dnf)" != "" ]; then
+		sudo dnf install zsh
+		chsh -s $(which zsh)
+	fi
 fi

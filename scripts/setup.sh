@@ -81,7 +81,7 @@ fi
 
 echo ""
 
-~/.dotfiles/scripts/dotfiles.sh source
+~/.dotfiles/scripts/dotfiles.sh
 
 echo ""
 
@@ -115,9 +115,9 @@ gh config set editor code
 
 gh alias delete --all
 
-gh alias set n 'notify -w'
-gh alias set i 'issue list'
-gh alias set p 'pr list'
+gh alias set notifications 'notify -sn 10'
+gh alias set issues 'search issues --assignee=@me --state=open'
+gh alias set prs 'search prs --assignee=@me --state=open'
 
 # Install gh extensions
 

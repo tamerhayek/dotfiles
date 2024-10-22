@@ -15,18 +15,15 @@ xorg-x11-drv-nvidia-cuda
 alacritty
 git
 gh
-gimp
 fastfetch
 bat
 eza
-inkscape
 obs-studio
 code
 vlc
 brave-browser
 discord
 firefox
-telegram
 transmission
 neovim
 speedtest-cli
@@ -35,7 +32,6 @@ fzf
 zoxide
 wget
 tldr
-thefuck
 
 docker-ce
 docker-ce-cli

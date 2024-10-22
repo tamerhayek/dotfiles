@@ -3,9 +3,15 @@
 # Sync dotfiles
 echo "Syncing dotfiles..."
 
-echo "Linking ~/.dotfiles/data/.config/* to ~/.config..."
-ln -s ~/.dotfiles/data/.config/alacritty ~/.config/alacritty
-ln -s ~/.dotfiles/data/.config/fastfetch ~/.config/fastfetch
+echo "Linking ~/.dotfiles/data/.config/alacritty/* to ~/.config/alacritty..."
+mkdir -p ~/.config/alacritty/themes
+ln -s ~/.dotfiles/data/.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+ln -s ~/.dotfiles/data/.config/alacritty/themes/dracula.toml ~/.config/alacritty/themes/dracula.toml
+echo "Done!"
+
+echo "Linking ~/.dotfiles/data/.config/fastfetch/* to ~/.config/fastfetch..."
+mkdir -p ~/.config/fastfetch
+ln -s ~/.dotfiles/data/.config/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
 echo "Done!"
 
 echo "Linking ~/.dotfiles/data/.gitconfig to ~/.gitconfig..."

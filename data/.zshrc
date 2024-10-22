@@ -44,7 +44,6 @@ zinit snippet OMZP::nvm
 zinit snippet OMZP::npm
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::safe-paste
-zinit snippet OMZP::thefuck
 
 # Load completions
 autoload -Uz compinit && compinit
@@ -95,22 +94,15 @@ alias llm='eza --all --header --long --sort=modified $eza_params'
 alias la='eza -lbhHigUmuSa'
 alias lt='eza --tree $eza_params'
 alias tree='eza --tree $eza_params'
+alias cat='bat'
 alias c='clear'
 alias h='history'
 alias ch='history -p'
 alias vim='nvim'
 alias vi='nvim'
 alias n='nvim'
-alias p='pnpm'
-alias z='zellij'
 alias dotfiles='~/.dotfiles/scripts/dotfiles.sh'
 alias setup='~/.dotfiles/scripts/setup.sh'
-alias status='~/.dotfiles/scripts/status.sh'
-
-# Git
-alias main="git switch main"
-alias staging="git switch staging"
-alias merge-main="main && git merge staging && staging"
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   if [ "$(which dnf)" != "" ]; then
@@ -123,7 +115,6 @@ fi
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-eval "$(thefuck --alias)"
 
 # NVM
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
