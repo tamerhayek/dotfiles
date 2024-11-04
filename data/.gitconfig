@@ -2,7 +2,7 @@
 	name = tamerhayek
 	email = dev@tamerhayek.com
 [core]
-	editor = code --wait
+	editor = codium --wait
 [alias]
 	lg = log --oneline --all --graph
 	st = status -s
