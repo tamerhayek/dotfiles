@@ -30,4 +30,8 @@ echo "Linking ~/.dotfiles/data/.nvmrc to ~/.nvmrc..."
 ln -s ~/.dotfiles/data/.nvmrc ~/.nvmrc
 echo "Done!"
 
+echo "Linking ~/.dotfiles/codium/settings.json to ~/Library/Application\ Support/VSCodium/User/settings.json..."
+ln -s ~/.dotfiles/data/codium/settings.json ~/Library/Application\ Support/VSCodium/User/settings.json
+echo "Done!"
+
 source ~/.zshrc

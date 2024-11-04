@@ -1,0 +1,114 @@
+{
+	// Accessibility
+	"editor.accessibilitySupport": "off",
+	// Breadcrumbs
+	"breadcrumbs.enabled": false,
+	// Codeium
+	"codeium.enableConfig": {
+		"*": true,
+		"markdown": true,
+		"postcss": true
+	},
+	// Editor
+	"editor.fontSize": 14,
+	"editor.autoClosingBrackets": "always",
+	"editor.bracketPairColorization.enabled": true,
+	"editor.codeLensFontFamily": "Geist Mono",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.fontFamily": "Geist Mono",
+	"editor.formatOnSaveMode": "modificationsIfAvailable",
+	"editor.guides.bracketPairs": true,
+	"editor.inlayHints.fontFamily": "Geist Mono",
+	"editor.insertSpaces": false,
+	"editor.linkedEditing": true,
+	"editor.tabSize": 4,
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
+	// Explorer
+	"explorer.compactFolders": true,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.sortOrder": "filesFirst",
+	// Files
+	"files.exclude": {
+		"**/.urami": true,
+		"**/tinymce": true,
+		"**/node_modules": true,
+		"**/build": true,
+		"**/dist": true,
+		"**/.git": true,
+		"**/.vscode": true,
+		"**/.svelte-kit": true
+	},
+	"files.trimTrailingWhitespace": true,
+	"files.watcherExclude": {
+		"**/.docker/**": true,
+		"**/.svelte-kit/**": true,
+		"**/.urami/**": true,
+		"**/build/**": true,
+		"**/dist/**": true
+	},
+	// Git
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"git.enableSmartCommit": true,
+	"git.openRepositoryInParentFolders": "always",
+	// JS / TS
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+	// Markdown
+	"markdown.preview.fontFamily": "Geist Mono",
+	// Notebook
+	"notebook.output.fontFamily": "Geist Mono",
+	// Prettier
+	"prettier.endOfLine": "crlf",
+	"prettier.singleAttributePerLine": true,
+	"prettier.singleQuote": true,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	// Search
+	"search.exclude": {
+		"**/.urami": true,
+		"**/tinymce": true,
+		"**/node_modules": true,
+		"**/build": true,
+		"**/dist": true,
+		"**/.git": true,
+		"**/.vscode": true,
+		"**/.svelte-kit": true
+	},
+	// Security
+	"security.promptForLocalFileProtocolHandling": false,
+	"security.workspace.trust.untrustedFiles": "open",
+	// Sherlock
+	"sherlock.userId": "5f853b96-4205-462d-bd50-0ac5c61bd1a0",
+	// Svelte
+	"[svelte]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"svelte.ask-to-enable-ts-plugin": false,
+	"svelte.enable-ts-plugin": true,
+	// Terminal
+	"terminal.explorerKind": "external",
+	"terminal.integrated.fontFamily": "MesloLGS NF",
+	"terminal.integrated.cursorStyle": "block",
+	"terminal.integrated.fontSize": 14,
+	// Update
+	"update.mode": "none",
+	"update.showReleaseNotes": false,
+	// Workbench
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.activityBar.location": "bottom",
+	"workbench.editor.customLabels.patterns": {
+		"**/+*": "${dirname}/${filename}.${extname}"
+	},
+	"workbench.editor.editorActionsLocation": "hidden",
+	"workbench.editor.labelFormat": "short",
+	"workbench.startupEditor": "none",
+	"workbench.tree.indent": 16
+}
+

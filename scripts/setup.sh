@@ -105,6 +105,11 @@ cat ~/.dotfiles/deps/npm.txt | xargs npm install -g
 
 echo ""
 
+# Install vscode-vscodium extensions
+
+echo "Installing vscode-vscodium extensions..."
+cat ~/.dotfiles/deps/vscodium_extensions.txt | xargs -n 1 codium --install-extension
+
 # gh config
 
 echo "Configuring gh..."
