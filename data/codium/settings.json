@@ -32,14 +32,7 @@
 	"explorer.sortOrder": "filesFirst",
 	// Files
 	"files.exclude": {
-		"**/.urami": true,
-		"**/tinymce": true,
-		"**/node_modules": true,
-		"**/build": true,
-		"**/dist": true,
-		"**/.git": true,
-		"**/.vscode": true,
-		"**/.svelte-kit": true
+		"**/.git": true
 	},
 	"files.trimTrailingWhitespace": true,
 	"files.watcherExclude": {
@@ -57,6 +50,7 @@
 	// JS / TS
 	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
 	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
 	// Markdown
 	"markdown.preview.fontFamily": "Geist Mono",
 	// Notebook
