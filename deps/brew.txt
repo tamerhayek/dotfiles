@@ -23,7 +23,6 @@ neovim
 nvm
 obs
 openjdk
-proton-drive
 protonvpn
 python3
 rectangle
