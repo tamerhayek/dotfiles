@@ -14,6 +14,12 @@ mkdir -p ~/.config/fastfetch
 ln -s ~/.dotfiles/data/.config/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
 echo "Done!"
 
+echo "Linking ~/.dotfiles/data/.config/yazi/* to ~/.config/yazi..."
+mkdir -p ~/.config/yazi
+ln -s ~/.dotfiles/data/.config/yazi/yazi.toml ~/.config/yazi/yazi.toml
+ln -s ~/.dotfiles/data/.config/yazi/keymaps.toml ~/.config/yazi/keymaps.toml
+ln -s ~/.dotfiles/data/.config/yazi/theme.toml ~/.config/yazi/theme.toml
+
 echo "Linking ~/.dotfiles/data/.gitconfig to ~/.gitconfig..."
 ln -s ~/.dotfiles/data/.gitconfig ~/.gitconfig
 echo "Done!"

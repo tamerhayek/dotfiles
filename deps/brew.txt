@@ -34,4 +34,5 @@ tldr
 vscodium
 vlc
 wget
+yazi
 zoxide
