@@ -109,7 +109,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 	  alias update='sudo dnf update && sudo dnf upgrade && sudo xargs dnf install <~/.dotfiles/deps/fedora.txt && sudo dnf autoremove'
   fi
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-  alias update='brew update && brew upgrade && xargs brew install <~/.dotfiles/deps/brew.txt && brew cleanup && brew autoremove'
+  alias update='brew update && brew upgrade && xargs brew install <~/.dotfiles/deps/brew.txt && brew cleanup && brew autoremove && mas outdated && mas upgrade'
 fi
 
 # Shell integrations

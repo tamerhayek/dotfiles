@@ -77,6 +77,19 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 
 	brew autoremove
 	brew cleanup
+
+
+	if [ "$(which mas)" != "" ]; then
+		echo ""
+
+		# Install mas apps
+		echo "Installing mas apps from store..."
+		xargs mas install <~/.dotfiles/deps/mas.txt
+
+		if [ "$(which xcodebuild)" != "" ]; then
+			sudo xcodebuild -license accept
+		fi
+	fi
 fi
 
 echo ""

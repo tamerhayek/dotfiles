@@ -19,6 +19,7 @@ homebrew/cask/transmission
 linearmouse
 localsend
 maccy
+mas
 neovim
 nvm
 obs
