@@ -147,6 +147,11 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+# User executables
+export PATH=$PATH:~/bin
+# Go
 export PATH=$PATH:$HOME/go/bin
-
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+# Java
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  export PATH=$PATH:/opt/homebrew/opt/openjdk/bin
+fi

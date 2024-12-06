@@ -3,6 +3,9 @@
 # Sync dotfiles
 echo "Syncing dotfiles..."
 
+echo "Creating ~/bin folder for user executables..."
+mkdir -p ~/bin
+
 echo "Linking ~/.dotfiles/data/.config/alacritty/* to ~/.config/alacritty..."
 mkdir -p ~/.config/alacritty/themes
 ln -s ~/.dotfiles/data/.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
