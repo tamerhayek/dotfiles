@@ -16,6 +16,7 @@ git
 go
 homebrew/cask/docker
 homebrew/cask/transmission
+jesseduffield/lazydocker/lazydocker
 linearmouse
 localsend
 maccy

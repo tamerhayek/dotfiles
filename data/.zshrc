@@ -102,6 +102,7 @@ alias ch='history -p'
 alias vim='nvim'
 alias vi='nvim'
 alias n='nvim'
+alias lzd='lazydocker'
 alias dotfiles='~/.dotfiles/scripts/dotfiles.sh'
 alias setup='~/.dotfiles/scripts/setup.sh'
 
