@@ -25,6 +25,8 @@ neovim
 nvm
 obs
 openjdk
+postman
+postman-agent
 protonvpn
 python3
 rectangle
