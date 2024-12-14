@@ -112,6 +112,7 @@
 	},
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+	},
+	"remote.autoForwardPorts": false
 }
 
