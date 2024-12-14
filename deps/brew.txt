@@ -31,7 +31,6 @@ protonvpn
 python3
 rectangle
 speedtest-cli
-spotify
 stats
 tldr
 vscodium
