@@ -32,8 +32,8 @@ if '%errorlevel%' NEQ '0' (
 echo "Linking %userprofile%\AppData\Roaming\VSCodium\User\settings.json to %userprofile%\.dotfiles\data\codium\settings.json..."
 mklink %userprofile%\AppData\Roaming\VSCodium\User\settings.json %userprofile%\.dotfiles\data\codium\settings.json
 
-echo "Linking %userprofile%\.dotfiles\data\.gitconfig to %userprofile%\.gitconfig..."
-mklink %userprofile%\.gitconfig %userprofile%\.dotfiles\data\.gitconfig
+echo "Linking %userprofile%\.dotfiles\data\.gitconfig.win to %userprofile%\.gitconfig..."
+mklink %userprofile%\.gitconfig %userprofile%\.dotfiles\data\.gitconfig.win
 
 echo "Linking %userprofile%\.dotfiles\data\.nvmrc to %userprofile%\.nvmrc..."
 mklink %userprofile%\.nvmrc %userprofile%\.dotfiles\data\.nvmrc
