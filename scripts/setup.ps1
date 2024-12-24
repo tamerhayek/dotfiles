@@ -15,6 +15,3 @@ fnm use $(cat ~/.nvmrc)
 
 echo "installing NPM packages..."
 cat ~/.dotfiles/deps/npm.txt | ForEach-Object { npm install -g $_ }
-
-echo "Installing wsl..."
-~/.dotfiles/scripts/wsl.ps1
