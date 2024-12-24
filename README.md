@@ -40,14 +40,14 @@ git clone https://github.com/tamerhayek/.dotfiles
 
 - Windows:
 
-    1. Launch `setup.bat` script
+    1. Launch `setup.ps1` script
 
         ```sh
-        ~\.dotfiles\scripts\setup.bat
+        ~\.dotfiles\scripts\setup.ps1
         ```
 
-    2. Launch `dotfiles.bat` script
+    2. Launch `dotfiles.ps1` script
 
         ```sh
-        ~\.dotfiles\scripts\dotfiles.bat
+        ~\.dotfiles\scripts\dotfiles.ps1
         ```
