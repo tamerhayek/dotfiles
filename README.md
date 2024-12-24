@@ -40,6 +40,8 @@ git clone https://github.com/tamerhayek/.dotfiles
 
 - Windows:
 
+    First remember to enable "Developer Mode" in "Settings > System > For Developers"
+
     1. Launch `setup.ps1` script
 
         ```sh
