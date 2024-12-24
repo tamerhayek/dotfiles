@@ -30,14 +30,6 @@ git clone https://github.com/tamerhayek/.dotfiles
         ~/.dotfiles/scripts/setup.sh
         ```
 
-        Or use `~/.dotfiles/scripts/dotfiles.sh` to only copy all files in `~/.dotfiles`
-
-        ```sh
-        ~/.dotfiles/scripts/dotfiles.sh
-        ```
-
-        Remember to delete files or folder before running `dotfiles.sh` in order to create symlinks
-
 - Windows:
 
     First remember to enable "Developer Mode" in "Settings > System > For Developers"
@@ -48,8 +40,11 @@ git clone https://github.com/tamerhayek/.dotfiles
         ~\.dotfiles\scripts\setup.ps1
         ```
 
-    2. Launch `dotfiles.ps1` script
+    2. (Optional) Launch `wsl.ps1` script
 
         ```sh
-        ~\.dotfiles\scripts\dotfiles.ps1
+        ~\.dotfiles\scripts\wsl.ps1
         ```
+
+
+Remember to delete files or folder before running `dotfiles.sh` or `dotfiles.ps1` in order to create symlinks
