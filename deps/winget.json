@@ -116,6 +116,9 @@
 				},
 				{
 					"PackageIdentifier" : "Schniz.fnm"
+				},
+				{
+					"PackageIdentifier" : "Oracle.VirtualBox"
 				}
 			],
 			"SourceDetails" :
