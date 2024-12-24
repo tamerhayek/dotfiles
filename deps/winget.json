@@ -119,6 +119,9 @@
 				},
 				{
 					"PackageIdentifier" : "Oracle.VirtualBox"
+				},
+				{
+					"PackageIdentifier" : "Docker.DockerDesktop"
 				}
 			],
 			"SourceDetails" :
