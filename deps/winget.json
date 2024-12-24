@@ -1,10 +1,10 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
 	"CreationDate" : "2024-12-24T12:48:20.619-00:00",
-	"Sources" : 
+	"Sources" :
 	[
 		{
-			"Packages" : 
+			"Packages" :
 			[
 				{
 					"PackageIdentifier" : "7zip.7zip"
@@ -113,9 +113,12 @@
 				},
 				{
 					"PackageIdentifier" : "VSCodium.VSCodium"
+				},
+				{
+					"PackageIdentifier" : "Schniz.fnm"
 				}
 			],
-			"SourceDetails" : 
+			"SourceDetails" :
 			{
 				"Argument" : "https://cdn.winget.microsoft.com/cache",
 				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
@@ -124,13 +127,13 @@
 			}
 		},
 		{
-			"Packages" : 
+			"Packages" :
 			[
 				{
 					"PackageIdentifier" : "XP89DCGQ3K6VLD"
 				}
 			],
-			"SourceDetails" : 
+			"SourceDetails" :
 			{
 				"Argument" : "https://storeedgefd.dsx.mp.microsoft.com/v9.0",
 				"Identifier" : "StoreEdgeFD",
