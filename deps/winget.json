@@ -122,6 +122,9 @@
 				},
 				{
 					"PackageIdentifier" : "Docker.DockerDesktop"
+				},
+				{
+					"PackageIdentifier" : "Postman.Postman"
 				}
 			],
 			"SourceDetails" :
