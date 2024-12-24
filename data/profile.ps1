@@ -3,3 +3,8 @@ Import-Module -Name Microsoft.WinGet.CommandNotFound
 
 # fnm
 fnm env --use-on-cd --shell powershell | Out-String | Invoke-Expression
+
+# Aliases
+Set-Alias -Name update -Value ~/.dotfiles/scripts/update.ps1
+Set-ALias -Name dotfiles -Value ~/.dotfiles/scripts/dotfiles.ps1
+Set-ALias -Name setup -Value ~/.dotfiles/scripts/setup.ps1
