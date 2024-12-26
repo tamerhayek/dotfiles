@@ -106,9 +106,7 @@ echo ""
 
 # Install Node
 echo "Install Node from NVM..."
-export NVM_DIR=~/.nvm
-source ~/.nvm/nvm.sh
-nvm install
+cat ~/.nvmrc | xargs fnm install
 
 echo ""
 

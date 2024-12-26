@@ -22,7 +22,7 @@ localsend
 maccy
 mas
 neovim
-nvm
+fnm
 obs
 openjdk
 postman
@@ -32,7 +32,6 @@ python3
 rectangle
 speedtest-cli
 stats
-tabby
 tldr
 vscodium
 vlc
