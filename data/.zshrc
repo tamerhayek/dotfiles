@@ -102,6 +102,8 @@ alias vim='nvim'
 alias vi='nvim'
 alias n='nvim'
 alias lzd='lazydocker'
+alias main='git switch main'
+alias staging='git switch staging'
 alias dotfiles='~/.dotfiles/scripts/dotfiles.sh'
 alias setup='~/.dotfiles/scripts/setup.sh'
 
