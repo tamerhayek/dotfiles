@@ -128,6 +128,9 @@
 				},
 				{
 					"PackageIdentifier" : "Mojang.MinecraftLauncher"
+				},
+				{
+					"PackageIdentifier" : "Oracle.JDK.23"
 				}
 			],
 			"SourceDetails" :
