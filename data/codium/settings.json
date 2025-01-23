@@ -114,6 +114,7 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"remote.autoForwardPorts": false,
-	"terminal.external.windowsExec": "\"C:\\Users\\tamibyte\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe\""
+	"terminal.external.windowsExec": "\"C:\\Users\\tamibyte\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe\"",
+	"codeium.enableCodeLens": false
 }
 
