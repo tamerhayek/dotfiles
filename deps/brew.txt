@@ -21,6 +21,7 @@ linearmouse
 localsend
 maccy
 mas
+mountain-duck
 neovim
 fnm
 obs
