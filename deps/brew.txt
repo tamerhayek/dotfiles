@@ -34,7 +34,6 @@ python3
 python3-tk
 rectangle
 speedtest-cli
-stats
 tldr
 vscodium
 vlc
