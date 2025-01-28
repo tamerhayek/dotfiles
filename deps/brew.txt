@@ -3,6 +3,7 @@ alt-tab
 appcleaner
 bat
 balenaetcher
+blender
 brave-browser
 btop
 discord
@@ -12,10 +13,12 @@ fastfetch
 firefox
 fzf
 gh
+gimp
 git
 go
 homebrew/cask/docker
 homebrew/cask/transmission
+inkscape
 jesseduffield/lazydocker/lazydocker
 linearmouse
 localsend
