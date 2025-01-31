@@ -42,4 +42,5 @@ vscodium
 vlc
 wget
 yazi
+zen-browser
 zoxide
