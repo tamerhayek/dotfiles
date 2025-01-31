@@ -34,7 +34,7 @@ postman
 postman-agent
 protonvpn
 python3
-python3-tk
+python-tk
 rectangle
 speedtest-cli
 tldr
