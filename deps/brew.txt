@@ -30,6 +30,7 @@ neovim
 fnm
 obs
 openjdk
+pika
 postman
 postman-agent
 protonvpn
