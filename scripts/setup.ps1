@@ -8,10 +8,3 @@ echo "Configuring tools..."
 
 echo "Installing vscode-vscodium extensions..."
 cat ~/.dotfiles/deps/vscodium.txt | ForEach-Object { codium --install-extension $_ }
-
-echo "Installing Node..."
-fnm install $(cat ~/.nvmrc)
-fnm use $(cat ~/.nvmrc)
-
-echo "installing NPM packages..."
-cat ~/.dotfiles/deps/npm.txt | ForEach-Object { npm install -g $_ }

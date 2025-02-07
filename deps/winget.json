@@ -25,6 +25,9 @@
 					"PackageIdentifier" : "Mozilla.Firefox"
 				},
 				{
+					"PackageIdentifier" : "Zen-Team.Zen-Browser"
+				},
+				{
 					"PackageIdentifier" : "Transmission.Transmission"
 				},
 				{
@@ -85,25 +88,27 @@
 					"PackageIdentifier" : "Microsoft.PowerToys"
 				},
 				{
-					"PackageIdentifier" : "9P8LTPGCBZXD"
+					"PackageIdentifier" : "9P8LTPGCBZXD",
+					"Name": "WinToys"
 				},
 				{
-					"PackageIdentifier" : "9NKSQGP7F2NH"
+					"PackageIdentifier" : "9NKSQGP7F2NH",
+					"Name": "Whatsapp Desktop"
 				},
 				{
-					"PackageIdentifier" : "9PGCV4V3BK4W"
-				},
-				{
-					"PackageIdentifier" : "9PMMSR1CGPWG"
+					"PackageIdentifier" : "9PMMSR1CGPWG",
+					"Name": "HEIF Image Extensions"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
-					"PackageIdentifier" : "9NCTDW2W1BH8"
+					"PackageIdentifier" : "9NCTDW2W1BH8",
+					"Name": "Raw Image Extension"
 				},
 				{
-					"PackageIdentifier" : "9NBLGGH4Z1JC"
+					"PackageIdentifier" : "9NBLGGH4Z1JC",
+					"Name": "Speedtest by Ookla"
 				},
 				{
 					"PackageIdentifier" : "Spotify.Spotify"
@@ -113,18 +118,6 @@
 				},
 				{
 					"PackageIdentifier" : "VSCodium.VSCodium"
-				},
-				{
-					"PackageIdentifier" : "Schniz.fnm"
-				},
-				{
-					"PackageIdentifier" : "Oracle.VirtualBox"
-				},
-				{
-					"PackageIdentifier" : "Docker.DockerDesktop"
-				},
-				{
-					"PackageIdentifier" : "Postman.Postman"
 				},
 				{
 					"PackageIdentifier" : "Mojang.MinecraftLauncher"
