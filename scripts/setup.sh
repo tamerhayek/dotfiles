@@ -113,6 +113,8 @@ echo ""
 # Install global npm packages
 echo "Installing global npm packages..."
 cat ~/.dotfiles/deps/npm.txt | xargs npm install -g
+# Enable pnpm
+corepack enable
 
 echo ""
 
