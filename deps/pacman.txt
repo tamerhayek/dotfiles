@@ -1,0 +1,10 @@
+git
+flatpak
+gedit
+cachyos-kernel-manager
+gnome-terminal
+linux-cachyos-headers
+cachyos-settings
+reflector
+extension-manager
+fastfetch
