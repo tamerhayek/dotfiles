@@ -131,4 +131,9 @@ export PATH=$PATH:$HOME/go/bin
 # Java
 if [[ "$OSTYPE" == "darwin"* ]]; then
   export PATH=$PATH:/opt/homebrew/opt/openjdk/bin
+  # The following lines have been added by Docker Desktop to enable Docker CLI completions.
+  fpath=(/Users/tamibyte/.docker/completions $fpath)
+  autoload -Uz compinit
+  compinit
+  # End of Docker CLI completions
 fi
