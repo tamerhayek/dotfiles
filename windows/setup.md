@@ -99,7 +99,7 @@ New-Item -Path $env:USERPROFILE\AppData\Roaming\VSCodium\User\settings.json -Ite
 #### VSCodium extensions
 
 ```powershell
-cat ~/dotfiles/global/codium/extensions.txt | ForEach-Object { codium --install-extension $_ }
+cat $env:USERPROFILE/dotfiles/global/codium/extensions.txt | ForEach-Object { codium --install-extension $_ }
 ```
 
 ### Source profile
