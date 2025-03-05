@@ -1,0 +1,37 @@
+7zip.7zip
+CPUID.CPU-Z
+CPUID.HWMonitor
+CrystalDewWorld.CrystalDiskMark
+Git.Git
+Mozilla.Firefox
+Zen-Team.Zen-Browser
+Transmission.Transmission
+Logitech.OptionsPlus
+VideoLAN.VLC
+CodeSector.TeraCopy
+Brave.Brave
+OBSProject.OBSStudio
+Valve.Steam
+Ubisoft.Connect
+GOG.Galaxy
+TechPowerUp.GPU-Z
+EpicGames.EpicGamesLauncher
+ElectronicArts.EADesktop
+Discord.Discord
+Balena.Etcher
+Amazon.Games
+Telegram.TelegramDesktop
+LocalSend.LocalSend
+Microsoft.WindowsTerminal
+Microsoft.PowerToys
+WinToys
+Whatsapp
+'HEIF Image Extensions'
+Microsoft.PowerShell
+'Raw Image Extension'
+Ookla.Speedtest.Desktop
+Spotify.Spotify
+voidtools.Everything
+VSCodium.VSCodium
+Mojang.MinecraftLauncher
+Oracle.JDK.23
