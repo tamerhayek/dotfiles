@@ -36,6 +36,10 @@ Microsoft Store apps
 
 Open Microsoft Store and update all apps
 
+### Cleanup Windows start app pinned
+
+Open the Windows start menu and right click on the Windows start menu and uninstall apps not required
+
 ### Winget
 
 Update from source
@@ -69,6 +73,8 @@ winget upgrade --all
 ```
 
 ### Link files
+
+Open terminal as administrator
 
 #### PowerShell profile
 
@@ -108,3 +114,7 @@ Install Hoyoplay [https://hoyoplay.hoyoverse.com/](https://hoyoplay.hoyoverse.co
 
 ### Manual Configuration
 
+#### Windows terminal
+
+Default profile -> Powershell
+Remove others
