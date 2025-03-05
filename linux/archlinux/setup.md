@@ -51,6 +51,8 @@ archinstall
 
 -> no chroot -> reboot
 
+## Post-install
+
 ### CachyOS repositories
 
 ```bash
@@ -87,6 +89,10 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg
 Insall gedit via pacman
 
 ```bash
+sudo pacman -S gedit
+```
+
+```bash
 sudo gedit /etc/pacman.conf
 ```
 
@@ -115,7 +121,13 @@ sudo pacman -S linux-cachyos-headers cachyos-settings
 
 #### ONLY FOR NVIDIA - CachyOS nvidia-open
 ```bash
-sudo pacman -S linux-cachyos-nvidia-open nvidia-util nvidia-settings lib32-nvidia-utils
+sudo pacman -S linux-cachyos-nvidia-open nvidia-utils nvidia-settings lib32-nvidia-utils
+```
+
+### OS Deps
+
+```bash
+sudo pacman -S usbutils less dkms bc
 ```
 
 ### Mirrorlist update
@@ -140,5 +152,5 @@ sudo update-grub
 ### Other apps
 
 ```bash
-sudo pacman -S extension-manager fastfetch
+sudo pacman -S - < ~/dotfiles/linux/archlinux/dependencies/pacman.txt
 ```

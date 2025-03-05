@@ -98,22 +98,9 @@ alias cat='bat'
 alias c='clear'
 alias h='history'
 alias ch='history -p'
-alias vim='nvim'
-alias vi='nvim'
-alias n='nvim'
-alias lzd='lazydocker'
 alias main='git switch main'
 alias staging='git switch staging'
-alias dotfiles='~/.dotfiles/scripts/dotfiles.sh'
-alias setup='~/.dotfiles/scripts/setup.sh'
-
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-  if [ "$(which dnf)" != "" ]; then
-	  alias update='sudo dnf update && sudo dnf upgrade && sudo xargs dnf install <~/.dotfiles/deps/fedora.txt && sudo dnf autoremove'
-  fi
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-  alias update='brew update && brew upgrade && xargs brew install <~/.dotfiles/deps/brew.txt && brew cleanup && brew autoremove && mas outdated && mas upgrade'
-fi
+alias update='brew update && brew upgrade && xargs brew install <~/dotfiles/macos/dependencies/brew.txt && brew cleanup && brew autoremove && mas outdated && mas upgrade'
 
 # Shell integrations
 eval "$(fzf --zsh)"
@@ -126,14 +113,15 @@ autoload -U add-zsh-hook
 
 # User executables
 export PATH=$PATH:~/bin
+
 # Go
 export PATH=$PATH:$HOME/go/bin
+
 # Java
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  export PATH=$PATH:/opt/homebrew/opt/openjdk/bin
-  # The following lines have been added by Docker Desktop to enable Docker CLI completions.
-  fpath=(/Users/tamibyte/.docker/completions $fpath)
-  autoload -Uz compinit
-  compinit
-  # End of Docker CLI completions
-fi
+export PATH=$PATH:/opt/homebrew/opt/openjdk/bin
+
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/tamibyte/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
