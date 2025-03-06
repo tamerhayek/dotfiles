@@ -187,6 +187,12 @@ Manually check for updates and install them
 	- Inking & typing personalization -> Disable
 	- Activity history -> Disable
 
+#### Control Panel
+
+- System and security
+	- Power options -> High performance
+		- Choose what the power button does -> Disable Fast startup and enable hibernate
+
 #### Windows terminal
 
 Default profile -> Powershell
