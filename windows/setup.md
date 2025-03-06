@@ -182,10 +182,27 @@ Manually check for updates and install them
 	- Startup
 		- Disable apps not required at startup
 
+- Time & language
+	- Language & region
+		- Windows display language -> English
+		- Add a language -> Italian
+		- Configure English and Italian language -> install everything and delete unnecessary keyboard layouts
+		- Regional Format -> Italy
+	- Typing
+		- Advanced keyboard settings -> Choose italian and enable Use the desktop language bar when it's available
+			- Language bar options
+				- Language bar -> Select hidden and disable show text labels
+				- Advanced key settings -> Disable every key sequence
+
+
+
 - Privacy & security
 	- General -> Disable everything
 	- Inking & typing personalization -> Disable
 	- Activity history -> Disable
+
+- Windows update
+	- Enable get the latest updates
 
 #### Control Panel
 
