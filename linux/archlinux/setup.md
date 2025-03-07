@@ -140,10 +140,18 @@ sudo reflector --sort rate --latest 20 --protocol https --save /etc/pacman.d/mir
 ### Update-grub
 
 ```bash
-yay update-grub
+yay update-grub os-prober
 ```
 
--> select the chaotic aur (2)
+-> select the chaotic aur
+
+Update grub config
+
+```bash
+sudo nano /etc/default/grub
+```
+
+and uncomment `GRUB_DISABLE_OS_PROBER=false`. Then save and exit.
 
 ```bash
 sudo update-grub
