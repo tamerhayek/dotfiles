@@ -75,7 +75,7 @@ cd yay
 makepkg -si
 ```
 
-### ONLY FOR NVIDIA - CachyOS nvidia-open
+### ONLY FOR NVIDIA
 ```bash
 sudo pacman -S nvidia nvidia-utils nvidia-settings lib32-nvidia-utils
 ```
