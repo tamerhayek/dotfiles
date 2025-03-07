@@ -151,7 +151,10 @@ Update grub config
 sudo nano /etc/default/grub
 ```
 
-and uncomment `GRUB_DISABLE_OS_PROBER=false`. Then save and exit.
+1. `GRUB_TIMEOUT=10`
+2. Uncomment `GRUB_DISABLE_OS_PROBER=false`.
+
+Then save and exit.
 
 ```bash
 sudo update-grub
@@ -161,4 +164,12 @@ sudo update-grub
 
 ```bash
 sudo pacman -S - < ~/dotfiles/linux/archlinux/dependencies/pacman.txt
+```
+
+```bash
+yay -S - < ~/dotfiles/linux/archlinux/dependencies/yay.txt
+```
+
+```bash
+flatpak install -y flathub < ~/dotfiles/linux/archlinux/dependencies/flatpak.txt
 ```
