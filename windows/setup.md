@@ -214,3 +214,7 @@ Manually check for updates and install them
 
 Default profile -> Powershell
 Remove others
+
+#### Teracopy
+
+Open teracopy settings -> set as default app and disable confirm on drag
