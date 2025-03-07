@@ -53,83 +53,6 @@ archinstall
 
 ## Post-install
 
-### CachyOS repositories
-
-```bash
-wget https://mirror.cachyos.org/cachyos-repo.tar.xz
-tar xf cachyos-repo.tar.xz && cd cachyos-repo
-sudo ./cachyos-repo.sh
-```
-
-When it asks for upgrade, answer no.
-
-### Yay
-
-```bash
-sudo pacman -S yay
-```
-
-### Pacman (CachyOS)
-
-```bash
-yay pacman
-```
-
--> select the cachyos pacman (2)
-
-### Chaotic AUR
-
-```bash
-sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
-sudo pacman-key --lsign-key 3056513887B78AEB
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-```
-
-Insall gedit via pacman
-
-```bash
-sudo pacman -S gedit
-```
-
-```bash
-sudo gedit /etc/pacman.conf
-```
-
-Find cachyos include mirrorlist lines, move them to the end after removing the last comment block, and add the Chaotic AUR lines.
-
-```bash
-[chaotic-aur]
-Include = /etc/pacman.d/chaotic-mirrorlist
-```
-
-```bash
-sudo pacman -Sy
-```
-
-### CachyOS Kernel
-
-```bash
-sudo pacman -S cachyos-kernel-manager gnome-terminal
-```
-
-Open the app and select the cachyos-v3/linux-cachyos kernel (stable) -> execute
-
-```bash
-sudo pacman -S linux-cachyos-headers cachyos-settings
-```
-
-#### ONLY FOR NVIDIA - CachyOS nvidia-open
-```bash
-sudo pacman -S linux-cachyos-nvidia-open nvidia-utils nvidia-settings lib32-nvidia-utils
-```
-
-### OS Deps
-
-```bash
-sudo pacman -S usbutils less dkms bc
-```
-
 ### Mirrorlist update
 
 ```bash
@@ -137,15 +60,33 @@ sudo pacman -S reflector
 sudo reflector --sort rate --latest 20 --protocol https --save /etc/pacman.d/mirrorlist
 ```
 
+### OS Deps
+
+```bash
+sudo pacman -S usbutils less dkms bc os-prober
+```
+
+### Yay
+
+```bash
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
+### ONLY FOR NVIDIA - CachyOS nvidia-open
+```bash
+sudo pacman -S nvidia nvidia-utils nvidia-settings lib32-nvidia-utils
+```
+
 ### Update-grub
 
 ```bash
-yay update-grub os-prober
+yay update-grub
 ```
 
--> select the chaotic aur
-
-Update grub config
+#### Update grub config
 
 ```bash
 sudo nano /etc/default/grub
@@ -154,7 +95,34 @@ sudo nano /etc/default/grub
 1. `GRUB_TIMEOUT=10`
 2. Uncomment `GRUB_DISABLE_OS_PROBER=false`.
 
-Then save and exit.
+#### Only for NVIDIA
+
+3. (only nvidia) Append to `GRUB_CMDLINE_LINUX_DEFAULT` `splash nvidia-drm.fbdev=1`
+
+Update MKINITCPIO
+
+```bash
+sudo nano /etc/mkinitcpio.conf
+```
+
+1. Find `MODULES=(...)` and add `nvidia nvidia_modeset nvidia_uvm nvidia_drm`
+2. Find `HOOKS=(...)` and remove `kms` from it
+
+Then run
+
+```bash
+sudo mkinitcpio -P
+```
+
+Add pacman hook
+
+```bash
+cd ~
+wget https://raw.githubusercontent.com/korvahannu/arch-nvidia-drivers-installation-guide/main/nvidia.hook
+sudo mkdir -p /etc/pacman.d/hooks && sudo mv nvidia.hook /etc/pacman.d/hooks/
+```
+
+#### Run update-grub
 
 ```bash
 sudo update-grub
@@ -167,9 +135,9 @@ sudo pacman -S - < ~/dotfiles/linux/archlinux/dependencies/pacman.txt
 ```
 
 ```bash
-yay -S - < ~/dotfiles/linux/archlinux/dependencies/yay.txt
+yay - < ~/dotfiles/linux/archlinux/dependencies/yay.txt
 ```
 
 ```bash
-flatpak install -y flathub < ~/dotfiles/linux/archlinux/dependencies/flatpak.txt
+xargs flatpak install -y < ~/dotfiles/linux/archlinux/dependencies/flatpak.txt
 ```
