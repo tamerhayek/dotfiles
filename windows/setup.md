@@ -8,6 +8,8 @@ Download Geek Uninstaller [https://www.geekuninstaller.com/](https://www.geekuni
 
 Download Nvidia App [https://www.nvidia.com/en-us/software/nvidia-app/](https://www.nvidia.com/en-us/software/nvidia-app/) and install Game Ready Drivers
 
+(One time) Download Nvidia Firmware update tool [https://www.nvidia.com/en-us/drivers/nv-uefi-update-x64/](https://www.nvidia.com/en-us/drivers/nv-uefi-update-x64/)
+
 Download Rufus [https://rufus.ie/](https://rufus.ie/)
 
 ### Clean windows
