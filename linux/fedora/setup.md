@@ -45,3 +45,16 @@ sudo grub2-editenv - unset menu_auto_hide
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
+## Install packages
+
+DNF
+
+```bash
+xargs sudo dnf install -y < ~/dotfiles/linux/fedora/dependencies/dnf.txt
+```
+
+Flatpak
+
+```bash
+xargs flatpak install -y < ~/dotfiles/linux/archlinux/dependencies/flatpak.txt
+```
