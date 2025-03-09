@@ -34,18 +34,18 @@ reflector --sort rate --latest 20 --protocol https --save /etc/pacman.d/mirrorli
 archinstall
 ```
 
-- Locales -> Keyboard
-- Disk configuration -> Partitioning -> Use a best effort partitioning scheme -> Select disk -> btrfs -> Yes submodules -> Use compression
-- Bootloader -> Grub
-- Hostname -> archlinux-<device>
-- Root password
-- User -> <username> -> Sudo user
-- Profile -> Type -> Desktop -> Gnome
-- Audio -> Pipewire
-- Network -> Use NetworkManager
-- Additional packages -> git flatpak
-- Optional repositories -> multilib
-- Timezone -> Europe/Rome (use /rome to find the timezone)
+-   Locales -> Keyboard
+-   Disk configuration -> Partitioning -> Use a best effort partitioning scheme -> Select disk -> btrfs -> Yes submodules -> Use compression
+-   Bootloader -> Grub
+-   Hostname -> archlinux-<device>
+-   Root password
+-   User -> <username> -> Sudo user
+-   Profile -> Type -> Desktop -> Gnome
+-   Audio -> Pipewire
+-   Network -> Use NetworkManager
+-   Additional packages -> git flatpak firefox
+-   Optional repositories -> multilib
+-   Timezone -> Europe/Rome (use /rome to find the timezone)
 
 -> install -> yes
 
@@ -60,40 +60,49 @@ sudo pacman -S reflector
 sudo reflector --sort rate --latest 20 --protocol https --save /etc/pacman.d/mirrorlist
 ```
 
-### OS Deps
+### Apps
+
+#### Pacman
 
 ```bash
-sudo pacman -S usbutils less dkms bc os-prober
+sudo pacman -S - < ~/dotfiles/linux/archlinux/dependencies/pacman.txt
 ```
 
-### Yay
+##### ONLY FOR NVIDIA
 
 ```bash
-sudo pacman -S --needed git base-devel
+sudo pacman -S nvidia nvidia-utils nvidia-settings lib32-nvidia-utils
+```
+
+#### Yay
+
+```bash
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 ```
 
-### ONLY FOR NVIDIA
 ```bash
-sudo pacman -S nvidia nvidia-utils nvidia-settings lib32-nvidia-utils
+yay - < ~/dotfiles/linux/archlinux/dependencies/yay.txt
 ```
 
-### Update-grub
+#### Flatpak
 
 ```bash
-yay update-grub
+xargs flatpak install -y < ~/dotfiles/linux/archlinux/dependencies/flatpak.txt
 ```
 
-#### Update grub config
+### Update grub config
 
 ```bash
 sudo nano /etc/default/grub
 ```
 
-1. `GRUB_TIMEOUT=10`
-2. Uncomment `GRUB_DISABLE_OS_PROBER=false`.
+Uncomment `GRUB_DISABLE_OS_PROBER=false`.
+
+```bash
+sudo update-grub
+```
 
 #### Only for NVIDIA
 
@@ -120,24 +129,4 @@ Add pacman hook
 cd ~
 wget https://raw.githubusercontent.com/korvahannu/arch-nvidia-drivers-installation-guide/main/nvidia.hook
 sudo mkdir -p /etc/pacman.d/hooks && sudo mv nvidia.hook /etc/pacman.d/hooks/
-```
-
-#### Run update-grub
-
-```bash
-sudo update-grub
-```
-
-### Other apps
-
-```bash
-sudo pacman -S - < ~/dotfiles/linux/archlinux/dependencies/pacman.txt
-```
-
-```bash
-yay - < ~/dotfiles/linux/archlinux/dependencies/yay.txt
-```
-
-```bash
-xargs flatpak install -y < ~/dotfiles/linux/archlinux/dependencies/flatpak.txt
 ```

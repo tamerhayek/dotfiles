@@ -1,3 +1,12 @@
 firefox
 extension-manager
 fastfetch
+linux-headers
+usbutils
+iw
+less
+dkms
+bc
+os-prober
+git
+base-devel
