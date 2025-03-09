@@ -1,2 +1,3 @@
 paru
 update-grub
+extension-manager

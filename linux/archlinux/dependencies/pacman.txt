@@ -1,5 +1,4 @@
 firefox
-extension-manager
 fastfetch
 linux-headers
 usbutils
