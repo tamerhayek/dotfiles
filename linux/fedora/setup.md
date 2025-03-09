@@ -28,3 +28,20 @@ sudo dnf install gcc kernel-headers kernel-devel akmod-nvidia xorg-x11-drv-nvidi
 Wait for the installation to finish. You can check using `modinfo -F version nvidia` command.
 It should return you driver version. If it shows ERROR: Module nvidia not found - modules are still building, keep waiting.
 
+## Grub config
+
+```bash
+sudo nano /etc/default/grub
+```
+
+1. `GRUB_TIMEOUT=5`
+2. `GRUB_TIMEOUT_STYLE=menu`
+3. `GRUB_DISABLE_OS_PROBER=false`.
+
+Reload config using
+
+```bash
+sudo grub2-editenv - unset menu_auto_hide
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+
