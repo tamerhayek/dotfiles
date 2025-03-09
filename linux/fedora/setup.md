@@ -13,23 +13,6 @@ sudo dnf upgrade --refresh
 
 then reboot.
 
-## Grub config
-
-```bash
-sudo nano /etc/default/grub
-```
-
-1. `GRUB_TIMEOUT=5`
-2. `GRUB_TIMEOUT_STYLE=menu`
-3. `GRUB_DISABLE_OS_PROBER=false`.
-
-Reload config using
-
-```bash
-sudo grub2-editenv - unset menu_auto_hide
-sudo grub2-mkconfig -o /boot/grub2/grub.cfg
-```
-
 ## OS Apps
 
 ### DNF
