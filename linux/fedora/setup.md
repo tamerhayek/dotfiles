@@ -1,15 +1,11 @@
 # Fedora
 
-## OS Deps
-
-### Enable rpmfusion repos
+## Enable rpmfusion repos
 
 ```bash
 sudo dnf install \   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install \   https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
-
-### Update deps
 
 ```bash
 sudo dnf upgrade --refresh
@@ -17,7 +13,7 @@ sudo dnf upgrade --refresh
 
 then reboot.
 
-### ONLY FOR NVIDIA
+## NVIDIA Drivers
 
 Install nvidia drivers.
 
@@ -45,16 +41,17 @@ sudo grub2-editenv - unset menu_auto_hide
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-## Install packages
+## OS Apps
 
-DNF
+### DNF
 
 ```bash
 xargs sudo dnf install -y < ~/dotfiles/linux/fedora/dependencies/dnf.txt
 ```
 
-Flatpak
+### Flatpak
 
 ```bash
 xargs flatpak install -y < ~/dotfiles/linux/archlinux/dependencies/flatpak.txt
 ```
+
