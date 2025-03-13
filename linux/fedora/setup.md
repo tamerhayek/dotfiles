@@ -35,7 +35,7 @@ It should return you driver version. If it shows ERROR: Module nvidia not found 
 ### Flatpak
 
 ```bash
-xargs flatpak install -y < ~/dotfiles/linux/archlinux/dependencies/flatpak.txt
+xargs flatpak install -y < ~/dotfiles/linux/fedora/dependencies/flatpak.txt
 ```
 
 ## Config
