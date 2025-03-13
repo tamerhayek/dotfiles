@@ -189,7 +189,7 @@ cat ~/.nvmrc | xargs fnm install
 ```
 
 ```bash
-cat ~/dotfiles/global/npm/modules.txt | xargs npm install -g
+cat ~/dotfiles/global/dependencies/npm.txt | xargs npm install -g
 corepack enable
 ```
 

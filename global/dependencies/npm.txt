@@ -1,0 +1,3 @@
+npm@latest
+corepack@latest
+sv@latest
