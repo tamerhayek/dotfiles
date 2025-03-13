@@ -116,6 +116,17 @@
 	"remote.autoForwardPorts": false,
 	"terminal.external.windowsExec": "\"C:\\Users\\tamibyte\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe\"",
 	"codeium.enableCodeLens": false,
-	"explorer.confirmPasteNative": false
+	"explorer.confirmPasteNative": false,
+	"terminal.integrated.profiles.linux": {
+		"zsh": {
+			"path": "/usr/bin/flatpak-spawn",
+			"args": [
+				"--host",
+				"--env=TERM=xterm-256color",
+				"zsh"
+			],
+			"overrideName": true
+		}
+	},
+	"terminal.integrated.defaultProfile.linux": "zsh"
 }
-

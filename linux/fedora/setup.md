@@ -77,6 +77,19 @@ rm -f -- ~/.gitconfig
 ln -s ~/dotfiles/linux/fedora/data/.gitconfig ~/.gitconfig
 ```
 
+### VSCodium
+
+```bash
+rm -f -- ~/.var/app/com.vscodium.codium/config/VSCodium/User/settings.json
+ln -s ~/dotfiles/global/codium/settings.json ~/.var/app/com.vscodium.codium/config/VSCodium/User/settings.json
+```
+
+Install extensions
+
+```bash
+xargs -n 1 flatpak run com.vscodium.codium --install-extension < ~/dotfiles/global/codium/extensions.txt
+```
+
 ### ZSH
 
 Download it
