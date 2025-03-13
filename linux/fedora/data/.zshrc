@@ -121,3 +121,5 @@ if [ -d "$FNM_PATH" ]; then
 fi
 
 alias codium="flatpak run com.vscodium.codium "
+
+fastfetch

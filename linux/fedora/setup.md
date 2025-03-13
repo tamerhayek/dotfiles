@@ -169,3 +169,11 @@ Install npm deps
 xargs npm install -g < ~/dotfiles/global/dependencies/npm.txt
 corepack enable pnpm
 ```
+
+### Fastfetch
+
+```bash
+rm -f -- ~/.config/fastfetch/config.jsonc
+mkdir -p ~/.config/fastfetch
+ln -s ~/dotfiles/global/.config/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
+```
