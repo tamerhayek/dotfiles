@@ -17,3 +17,5 @@ zoxide
 telegram
 discord
 obs-studio
+steam
+lutris
