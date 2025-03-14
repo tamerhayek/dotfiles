@@ -117,7 +117,7 @@ source $ZSH/oh-my-zsh.sh
 FNM_PATH="~/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
-  eval "`fnm env`"
+  eval "`fnm env --use-on-cd --corepack-enabled --shell zsh`"
 fi
 
 # .local/bin
@@ -216,7 +216,10 @@ alias codium="flatpak run com.vscodium.codium "
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-# FNM
-eval "`fnm env --use-on-cd --corepack-enabled --shell zsh`"
-
 fastfetch
+# fnm
+FNM_PATH="/home/tamibyte/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/tamibyte/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
