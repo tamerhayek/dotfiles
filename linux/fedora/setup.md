@@ -38,6 +38,15 @@ It should return you driver version. If it shows ERROR: Module nvidia not found 
 xargs flatpak install -y < ~/dotfiles/linux/fedora/dependencies/flatpak.txt
 ```
 
+### Docker
+
+```bash
+sudo dnf-3 config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo systemctl enable --now docker
+sudo dnf install -y https://desktop.docker.com/linux/main/amd64/docker-desktop-x86_64.rpm
+```
+
 ## Config
 
 ### SSH
