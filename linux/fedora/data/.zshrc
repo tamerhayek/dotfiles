@@ -114,11 +114,14 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # fnm
-FNM_PATH="/home/tamibyte/.local/share/fnm"
+FNM_PATH="~/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
   eval "`fnm env`"
 fi
+
+# .local/bin
+export PATH=~/.local/bin:$PATH
 
 alias codium="flatpak run com.vscodium.codium "
 
