@@ -210,6 +210,7 @@ alias install="xargs sudo dnf install -y < ~/dotfiles/linux/fedora/dependencies/
 
 alias main='git switch main'
 alias staging='git switch staging'
+alias lzd="lazydocker"
 alias codium="flatpak run com.vscodium.codium "
 
 # Shell integrations
