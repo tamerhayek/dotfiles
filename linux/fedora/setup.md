@@ -21,6 +21,12 @@ then reboot.
 xargs sudo dnf install -y < ~/dotfiles/linux/fedora/dependencies/dnf.txt
 ```
 
+Install rpm packages from urls
+
+```bash
+xargs sudo dnf install -y < ~/dotfiles/linux/fedora/dependencies/rpm.txt
+```
+
 #### NVIDIA Drivers
 
 Install nvidia drivers.
@@ -44,7 +50,6 @@ xargs flatpak install -y < ~/dotfiles/linux/fedora/dependencies/flatpak.txt
 sudo dnf-3 config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo systemctl enable --now docker
-sudo dnf install -y https://desktop.docker.com/linux/main/amd64/docker-desktop-x86_64.rpm
 ```
 
 ## Config
