@@ -85,6 +85,13 @@ and open grub-customizer.
 
 TIP: Don't move UEFI Firmware settings inside a submenu. It will break!
 
+TIP 2: After customizing GRUB, it will boot directly into fedora. So run this command to fix this behaviour.
+
+```bash
+sudo grub2-editenv - unset menu_auto_hide
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+
 #### Install Dedsec Theme
 
 [Github](https://github.com/VandalByte/dedsec-grub2-theme/tree/main)
