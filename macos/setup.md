@@ -59,23 +59,6 @@ mkdir -p ~/bin
 
 ### Link dotfiles
 
-#### Alacritty
-
-if files exist, remove them
-
-```bash
-rm ~/.config/alacritty/alacritty.toml
-rm ~/.config/alacritty/themes/dracula.toml
-```
-
-then create symlinks
-
-```bash
-mkdir -p ~/.config/alacritty/themes
-ln -s ~/dotfiles/global/.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
-ln -s ~/dotfiles/global/.config/alacritty/themes/dracula.toml ~/.config/alacritty/themes/dracula.toml
-```
-
 #### Fastfetch
 
 if files exist, remove them
@@ -89,25 +72,6 @@ then create symlinks
 ```bash
 mkdir -p ~/.config/fastfetch
 ln -s ~/dotfiles/global/.config/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
-```
-
-#### Yazi
-
-if files exist, remove them
-
-```bash
-rm ~/.config/yazi/yazi.toml
-rm ~/.config/yazi/keymaps.toml
-rm ~/.config/yazi/theme.toml
-```
-
-then create symlinks
-
-```bash
-mkdir -p ~/.config/yazi
-ln -s ~/dotfiles/global/.config/yazi/yazi.toml ~/.config/yazi/yazi.toml
-ln -s ~/dotfiles/global/.config/yazi/keymaps.toml ~/.config/yazi/keymaps.toml
-ln -s ~/dotfiles/global/.config/yazi/theme.toml ~/.config/yazi/theme.toml
 ```
 
 #### Powerlevel10k

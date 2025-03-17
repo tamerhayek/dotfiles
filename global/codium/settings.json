@@ -130,5 +130,5 @@
 	},
 	"terminal.integrated.defaultProfile.linux": "zsh",
 	"window.autoDetectColorScheme": true,
-	"terminal.external.osxExec": "Alacritty.app"
+	"terminal.external.osxExec": "Terminal.app"
 }

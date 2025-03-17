@@ -1,4 +1,3 @@
-alacritty
 alt-tab
 appcleaner
 bat
@@ -42,6 +41,5 @@ tldr
 vscodium
 vlc
 wget
-yazi
 zen-browser
 zoxide
