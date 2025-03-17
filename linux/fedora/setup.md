@@ -63,6 +63,39 @@ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/i
 
 ## Config
 
+### GRUB
+
+```bash
+sudo dnf install grub-customizer
+```
+
+then change grub config line -> `GRUB_ENABLE_BLSCFG=false`
+
+```bash
+sudo nano /etc/default/grub
+```
+
+then reload grub config
+
+```bash
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+
+and open grub-customizer.
+
+TIP: Don't move UEFI Firmware settings inside a submenu. It will break!
+
+#### Install Dedsec Theme
+
+[Github](https://github.com/VandalByte/dedsec-grub2-theme/tree/main)
+
+```bash
+git clone --depth 1 https://github.com/VandalByte/dedsec-grub2-theme.git && cd dedsec-grub2-theme
+sudo python3 dedsec-theme.py --install
+```
+
+Choose Compact Theme (A).
+
 ### SSH
 
 Create config file `~/ssh/config`
