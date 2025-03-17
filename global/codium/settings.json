@@ -128,5 +128,7 @@
 			"overrideName": true
 		}
 	},
-	"terminal.integrated.defaultProfile.linux": "zsh"
+	"terminal.integrated.defaultProfile.linux": "zsh",
+	"window.autoDetectColorScheme": true,
+	"terminal.external.osxExec": "Alacritty.app"
 }
