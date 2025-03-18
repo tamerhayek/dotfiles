@@ -270,3 +270,21 @@ gh alias set notifications 'notify -sn 10'
 gh alias set issues 'search issues --assignee=@me --state=open'
 gh alias set prs 'search prs --assignee=@me --state=open'
 ```
+
+### Extension Manager
+
+Download extensions:
+
+- Blur my Shell
+- Clipboard History
+- Dash to Dock
+- Auto Move Windows
+- Caffeine
+- Vitals
+- Media Controls
+- User Themes
+- Extension List
+
+Enable System Extensions:
+
+- AppIndicator and KStatusNotifierItemSupport
