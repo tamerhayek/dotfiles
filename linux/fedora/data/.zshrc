@@ -205,7 +205,7 @@ alias cat='bat'
 alias c='clear'
 alias h='history'
 alias ch='history -p'
-alias update="sudo dnf update -y && sudo flatpak update -y"
+alias update="sudo dnf update -y && sudo flatpak update -y && sudo dnf autoremove"
 alias install="xargs sudo dnf install -y < ~/dotfiles/linux/fedora/dependencies/dnf.txt && xargs sudo dnf install -y < ~/dotfiles/linux/fedora/dependencies/rpm.txt && xargs flatpak install -y < ~/dotfiles/linux/fedora/dependencies/flatpak.txt"
 
 alias main='git switch main'
