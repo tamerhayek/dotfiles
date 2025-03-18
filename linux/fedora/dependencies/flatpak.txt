@@ -4,3 +4,5 @@ com.vscodium.codium
 com.brave.Browser
 app.zen_browser.zen
 com.mattjakeman.ExtensionManager
+com.heroicgameslauncher.hgl
+com.pokemmo.PokeMMO
