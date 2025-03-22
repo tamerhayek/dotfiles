@@ -18,6 +18,5 @@ telegram
 discord
 obs-studio
 steam
-lutris
 gnome-tweaks
 transmission
