@@ -69,7 +69,12 @@ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/i
 sudo dnf install grub-customizer
 ```
 
-then change grub config line -> `GRUB_ENABLE_BLSCFG=false`
+then change grub config:
+
+1. `GRUB_ENABLE_BLSCFG=false`
+2. `GRUB_DEFAULT="saved"`
+3. `GRUB_SAVEDEFAULT=true`
+4. `GRUB_TIMEOUT="-1"`
 
 ```bash
 sudo nano /etc/default/grub
