@@ -20,3 +20,4 @@ obs-studio
 steam
 lutris
 gnome-tweaks
+transmission
