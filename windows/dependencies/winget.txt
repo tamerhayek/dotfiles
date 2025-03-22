@@ -4,7 +4,6 @@ CPUID.HWMonitor
 CrystalDewWorld.CrystalDiskMark
 Git.Git
 Mozilla.Firefox
-Zen-Team.Zen-Browser
 Transmission.Transmission
 Logitech.OptionsPlus
 VideoLAN.VLC
