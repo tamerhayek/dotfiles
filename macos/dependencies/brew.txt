@@ -32,7 +32,6 @@ openjdk
 pika
 postman
 postman-agent
-protonvpn
 python3
 python-tk
 rectangle
