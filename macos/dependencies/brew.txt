@@ -36,6 +36,7 @@ python3
 python-tk
 rectangle
 speedtest-cli
+the-unarchiver
 tldr
 vscodium
 vlc
