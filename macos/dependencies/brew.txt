@@ -27,7 +27,6 @@ mountain-duck
 neohtop
 neovim
 fnm
-obs
 openjdk
 pika
 postman
