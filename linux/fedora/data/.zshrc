@@ -217,10 +217,11 @@ alias codium="flatpak run com.vscodium.codium "
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-fastfetch
 # fnm
 FNM_PATH="/home/tamibyte/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="/home/tamibyte/.local/share/fnm:$PATH"
   eval "`fnm env`"
 fi
+
+fastfetch
