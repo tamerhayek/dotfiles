@@ -26,6 +26,7 @@ mas
 mountain-duck
 neohtop
 neovim
+nextcloud
 fnm
 openjdk
 pika
