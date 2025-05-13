@@ -2,6 +2,5 @@ io.missioncenter.MissionCenter
 org.localsend.localsend_app
 com.vscodium.codium
 com.brave.Browser
-app.zen_browser.zen
 com.mattjakeman.ExtensionManager
 com.spotify.Client

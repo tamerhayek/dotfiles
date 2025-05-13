@@ -41,5 +41,4 @@ tldr
 vscodium
 vlc
 wget
-zen-browser
 zoxide
