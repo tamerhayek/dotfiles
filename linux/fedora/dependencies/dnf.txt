@@ -21,7 +21,6 @@ grub-customizer
 inkscape
 kernel-devel
 kernel-headers
-nextcloud-client
 obs-studio
 steam
 telegram
