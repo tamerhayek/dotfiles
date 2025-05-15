@@ -152,6 +152,13 @@ rm -f -- ~/.var/app/com.vscodium.codium/config/VSCodium/User/settings.json
 ln -s ~/dotfiles/global/codium/settings.json ~/.var/app/com.vscodium.codium/config/VSCodium/User/settings.json
 ```
 
+Configure keybindings
+
+```bash
+rm -f -- ~/.var/app/com.vscodium.codium/config/VSCodium/User/keybindings.json
+ln -s ~/dotfiles/linux/fedora/data/codium/keybindings.json ~/.var/app/com.vscodium.codium/config/VSCodium/User/keybindings.json
+```
+
 Install extensions
 
 ```bash
