@@ -94,13 +94,12 @@ alias llm='eza --all --header --long --sort=modified $eza_params'
 alias la='eza -lbhHigUmuSa'
 alias lt='eza --tree $eza_params'
 alias tree='eza --tree $eza_params'
-alias cat='bat'
-alias c='clear'
-alias h='history'
-alias ch='history -p'
+
+alias update='brew update && brew upgrade && xargs brew install <~/dotfiles/macos/dependencies/brew.txt && brew cleanup && brew autoremove && mas outdated && mas upgrade'
+alias install='~/dotfiles/macos/scripts/install.sh'
+
 alias main='git switch main'
 alias staging='git switch staging'
-alias update='brew update && brew upgrade && xargs brew install <~/dotfiles/macos/dependencies/brew.txt && brew cleanup && brew autoremove && mas outdated && mas upgrade'
 
 # Shell integrations
 eval "$(fzf --zsh)"

@@ -163,36 +163,6 @@ corepack enable
 cat ~/dotfiles/global/codium/extensions.txt | xargs -n 1 codium --install-extension
 ```
 
-#### GH CLI
-
-Login
-
-```bash
-gh auth login
-```
-
-Set Editor
-
-```bash
-gh config set editor codium
-```
-
-Extensions
-
-```bash
-gh extension install meiji163/gh-notify
-```
-
-Add aliases
-
-```bash
-gh alias delete --all
-
-gh alias set notifications 'notify -sn 10'
-gh alias set issues 'search issues --assignee=@me --state=open'
-gh alias set prs 'search prs --assignee=@me --state=open'
-```
-
 ### Source
 
 ```bash
