@@ -246,36 +246,6 @@ mkdir -p ~/.config/fastfetch
 ln -s ~/dotfiles/global/.config/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
 ```
 
-### GH CLI
-
-Login
-
-```bash
-gh auth login
-```
-
-Set Editor
-
-```bash
-gh config set editor codium
-```
-
-Extensions
-
-```bash
-gh extension install meiji163/gh-notify
-```
-
-Add aliases
-
-```bash
-gh alias delete --all
-
-gh alias set notifications 'notify -sn 10'
-gh alias set issues 'search issues --assignee=@me --state=open'
-gh alias set prs 'search prs --assignee=@me --state=open'
-```
-
 ### Extension Manager
 
 Download extensions:
@@ -293,3 +263,9 @@ Download extensions:
 Enable System Extensions:
 
 - AppIndicator and KStatusNotifierItemSupport
+
+### Tweaks
+
+- Keyboard
+	- Additional Layout Options
+		- Ctrl position -> Swap Left Alt with Left Ctrl
