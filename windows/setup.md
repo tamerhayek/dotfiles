@@ -74,6 +74,12 @@ Upgrade
 winget upgrade --all
 ```
 
+Reset Winget in case of upgrade Errors
+
+```powershell
+Get-AppxPackage -Name 'Microsoft.DesktopAppInstaller' | Reset-AppxPackage
+```
+
 ### Link files
 
 Open terminal as administrator
@@ -216,7 +222,3 @@ Manually check for updates and install them
 
 Default profile -> Powershell
 Remove others
-
-#### Teracopy
-
-Open teracopy settings -> set as default app and disable confirm on drag
