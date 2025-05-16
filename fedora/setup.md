@@ -18,13 +18,13 @@ then reboot.
 ### DNF
 
 ```bash
-xargs sudo dnf install -y < ~/dotfiles/linux/fedora/dependencies/dnf.txt
+xargs sudo dnf install -y < ~/dotfiles/fedora/dependencies/dnf.txt
 ```
 
 Install rpm packages from urls
 
 ```bash
-xargs sudo dnf install -y < ~/dotfiles/linux/fedora/dependencies/rpm.txt
+xargs sudo dnf install -y < ~/dotfiles/fedora/dependencies/rpm.txt
 ```
 
 #### NVIDIA Drivers
@@ -41,13 +41,13 @@ It should return you driver version. If it shows ERROR: Module nvidia not found 
 ### Flatpak
 
 ```bash
-xargs flatpak install -y < ~/dotfiles/linux/fedora/dependencies/flatpak.txt
+xargs flatpak install -y < ~/dotfiles/fedora/dependencies/flatpak.txt
 ```
 
 ### Docker
 
 ```bash
-sudo dnf-3 config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf-3 config-manager --add-repo https://download.docker.com/fedora/docker-ce.repo
 sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo systemctl enable --now docker
 sudo groupadd docker
@@ -142,7 +142,7 @@ Re-clone this repo using ssh via github.
 
 ```bash
 rm -f -- ~/.gitconfig
-ln -s ~/dotfiles/linux/fedora/data/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/fedora/data/.gitconfig ~/.gitconfig
 ```
 
 ### VSCodium
@@ -156,7 +156,7 @@ Configure keybindings
 
 ```bash
 rm -f -- ~/.var/app/com.vscodium.codium/config/VSCodium/User/keybindings.json
-ln -s ~/dotfiles/linux/fedora/data/codium/keybindings.json ~/.var/app/com.vscodium.codium/config/VSCodium/User/keybindings.json
+ln -s ~/dotfiles/fedora/data/codium/keybindings.json ~/.var/app/com.vscodium.codium/config/VSCodium/User/keybindings.json
 ```
 
 Install extensions
@@ -211,7 +211,7 @@ Link the `.zshrc` file
 
 ```bash
 rm -f -- ~/.zshrc
-ln -s ~/dotfiles/linux/fedora/data/.zshrc ~/.zshrc
+ln -s ~/dotfiles/fedora/data/.zshrc ~/.zshrc
 ```
 
 Link the `.p10k.zsh` file

@@ -1,26 +1,26 @@
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf-3 config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf-3 config-manager --add-repo https://download.docker.com/fedora/docker-ce.repo
 
 sudo dnf update
 sudo dnf upgrade --refresh
 
-xargs sudo dnf install -y < ~/dotfiles/linux/fedora/dependencies/dnf.txt
-xargs sudo dnf install -y < ~/dotfiles/linux/fedora/dependencies/rpm.txt
-xargs flatpak install -y < ~/dotfiles/linux/fedora/dependencies/flatpak.txt
+xargs sudo dnf install -y < ~/dotfiles/fedora/dependencies/dnf.txt
+xargs sudo dnf install -y < ~/dotfiles/fedora/dependencies/rpm.txt
+xargs flatpak install -y < ~/dotfiles/fedora/dependencies/flatpak.txt
 
 rm -f -- ~/.gitconfig
-ln -s ~/dotfiles/linux/fedora/data/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/fedora/data/.gitconfig ~/.gitconfig
 
 rm -f -- ~/.var/app/com.vscodium.codium/config/VSCodium/User/settings.json
 ln -s ~/dotfiles/global/codium/settings.json ~/.var/app/com.vscodium.codium/config/VSCodium/User/settings.json
 rm -f -- ~/.var/app/com.vscodium.codium/config/VSCodium/User/keybindings.json
-ln -s ~/dotfiles/linux/fedora/data/codium/keybindings.json ~/.var/app/com.vscodium.codium/config/VSCodium/User/keybindings.json
+ln -s ~/dotfiles/fedora/data/codium/keybindings.json ~/.var/app/com.vscodium.codium/config/VSCodium/User/keybindings.json
 
 xargs -n 1 flatpak run com.vscodium.codium --install-extension < ~/dotfiles/global/codium/extensions.txt
 
 rm -f -- ~/.zshrc
-ln -s ~/dotfiles/linux/fedora/data/.zshrc ~/.zshrc
+ln -s ~/dotfiles/fedora/data/.zshrc ~/.zshrc
 
 rm -f -- ~/.p10k.zsh
 ln -s ~/dotfiles/global/.p10k.zsh ~/.p10k.zsh
