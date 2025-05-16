@@ -9,10 +9,6 @@ sudo xcodebuild -license accept
 
 mkdir -p ~/bin
 
-rm ~/.config/fastfetch/config.jsonc
-mkdir -p ~/.config/fastfetch
-ln -s ~/dotfiles/global/.config/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
-
 rm ~/.p10k.zsh
 ln -s ~/dotfiles/global/.p10k.zsh ~/.p10k.zsh
 

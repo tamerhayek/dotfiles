@@ -8,7 +8,6 @@ btop
 discord
 docker-completion
 eza
-fastfetch
 firefox
 fzf
 gimp

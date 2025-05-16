@@ -245,34 +245,26 @@ xargs npm install -g < ~/dotfiles/global/dependencies/npm.txt
 corepack enable pnpm
 ```
 
-### Fastfetch
-
-```bash
-rm -f -- ~/.config/fastfetch/config.jsonc
-mkdir -p ~/.config/fastfetch
-ln -s ~/dotfiles/global/.config/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
-```
-
 ### Extension Manager
 
 Download extensions:
 
-- Blur my Shell
-- Clipboard History
-- Dash to Dock
-- Auto Move Windows
-- Caffeine
-- Vitals
-- Media Controls
-- User Themes
-- Extension List
+-   Blur my Shell
+-   Clipboard History
+-   Dash to Dock
+-   Auto Move Windows
+-   Caffeine
+-   Vitals
+-   Media Controls
+-   User Themes
+-   Extension List
 
 Enable System Extensions:
 
-- AppIndicator and KStatusNotifierItemSupport
+-   AppIndicator and KStatusNotifierItemSupport
 
 ### Tweaks
 
-- Keyboard
-	- Additional Layout Options
-		- Ctrl position -> Swap Left Alt with Left Ctrl
+-   Keyboard
+    -   Additional Layout Options
+        -   Ctrl position -> Swap Left Alt with Left Ctrl

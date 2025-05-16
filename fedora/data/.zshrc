@@ -220,5 +220,3 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="/home/tamibyte/.local/share/fnm:$PATH"
   eval "`fnm env`"
 fi
-
-fastfetch

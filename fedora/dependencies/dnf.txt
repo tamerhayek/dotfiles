@@ -9,7 +9,6 @@ docker-ce
 docker-ce-cli
 docker-compose-plugin
 eza
-fastfetch
 firefox
 fzf
 gcc
