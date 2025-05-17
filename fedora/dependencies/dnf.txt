@@ -1,6 +1,5 @@
 akmod-nvidia
 bat
-blender
 btop
 containerd.io
 discord
@@ -12,12 +11,10 @@ eza
 firefox
 fzf
 gcc
-gimp
 git
 gnome-tweaks
 go
 grub-customizer
-inkscape
 kernel-devel
 kernel-headers
 obs-studio
@@ -26,8 +23,5 @@ telegram
 transmission
 vlc
 wget
-xorg-x11-drv-nvidia
-xorg-x11-drv-nvidia-libs
-xorg-x11-drv-nvidia-libs.i686
 zoxide
 zsh
