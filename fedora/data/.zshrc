@@ -207,7 +207,7 @@ alias install="~/dotfiles/fedora/scripts/install.sh"
 
 alias main='git switch main'
 alias staging='git switch staging'
-alias lzd="lazydocker"
+
 alias codium="flatpak run com.vscodium.codium "
 
 # Shell integrations

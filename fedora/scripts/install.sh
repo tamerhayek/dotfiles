@@ -1,3 +1,5 @@
+cd
+
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf-3 config-manager --add-repo https://download.docker.com/fedora/docker-ce.repo
@@ -25,8 +27,11 @@ ln -s ~/dotfiles/fedora/data/.zshrc ~/.zshrc
 rm -f -- ~/.p10k.zsh
 ln -s ~/dotfiles/global/.p10k.zsh ~/.p10k.zsh
 
-curl -fsSL https://fnm.vercel.app/install | zsh -s -- --skip-shell
-source ~/.zshrc
+if ! command -v fnm &> /dev/null; then
+    curl -fsSL https://fnm.vercel.app/install | zsh -s -- --skip-shell
+    source ~/.zshrc
+fi
+
 rm -f -- ~/.nvmrc
 ln -s ~/dotfiles/global/.nvmrc ~/.nvmrc
 fnm install

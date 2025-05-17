@@ -55,12 +55,6 @@ sudo usermod -aG docker $USER
 newgrp docker
 ```
 
-Install lazydocker
-
-```bash
-curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | zsh
-```
-
 ## Config
 
 ### GRUB
@@ -268,3 +262,4 @@ Enable System Extensions:
 -   Keyboard
     -   Additional Layout Options
         -   Ctrl position -> Swap Left Alt with Left Ctrl
+
