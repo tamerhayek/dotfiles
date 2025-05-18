@@ -27,3 +27,4 @@ com.heroicgameslauncher.hgl
 net.lutris.Lutris
 io.github.fabrialberio.pinapp
 org.desmume.DeSmuME
+xyz.ketok.Speedtest

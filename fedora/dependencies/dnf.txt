@@ -25,7 +25,6 @@ krita
 obs-studio
 steam
 telegram
-transmission
 vlc
 wget
 xorg-x11-drv-nvidia-cuda
