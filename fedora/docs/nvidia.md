@@ -3,7 +3,7 @@
 Install nvidia drivers.
 
 ```bash
-sudo dnf install gcc kernel-headers kernel-devel akmod-nvidia
+sudo dnf install gcc kernel-headers kernel-devel akmod-nvidia xorg-x11-drv-nvidia-cuda
 ```
 
 Wait for the installation to finish. You can check using `modinfo -F version nvidia` command.

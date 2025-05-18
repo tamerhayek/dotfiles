@@ -7,12 +7,11 @@ Download extensions:
 -   Blur my Shell
 -   Clipboard History
 -   Dash to Dock
--   Auto Move Windows
 -   Caffeine
 -   Vitals
 -   Media Controls
 -   User Themes
--   Extension List
+-   Color Picker
 
 Enable System Extensions:
 
