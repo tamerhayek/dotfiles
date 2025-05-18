@@ -24,7 +24,6 @@ io.github.Foldex.AdwSteamGtk
 net.codelogistics.webapps
 io.github.giantpinkrobots.varia
 com.heroicgameslauncher.hgl
-net.lutris.Lutris
 io.github.fabrialberio.pinapp
 org.desmume.DeSmuME
 xyz.ketok.Speedtest
