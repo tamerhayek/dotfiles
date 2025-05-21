@@ -13,7 +13,6 @@ it.mijorus.gearlever
 me.iepure.devtoolbox
 net.codelogistics.webapps
 org.gnome.Showtime
-org.gnome.World.PikaBackup
 org.localsend.localsend_app
 org.onlyoffice.desktopeditors
 xyz.ketok.Speedtest
