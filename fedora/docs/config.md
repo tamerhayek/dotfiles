@@ -11,6 +11,7 @@
     -   Toggle fullscreen mode -> Super+F
     -   Custom Shortcuts:
         -   Open Terminal (Command: `ptyxis &`) -> Super+T
+        -   Open VSCodium (Command: `flatpak run com.vscodium.codium`) -> Super+C
 
 ## Extension Manager
 
