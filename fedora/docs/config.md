@@ -1,5 +1,17 @@
 # Config
 
+## Settings
+
+-   Shortcuts
+    -   Home Folder -> Super+E
+    -   Launch Web Browser -> Super+B
+    -   Terminal -> Super+T
+    -   Switch applications -> Ctrl+Tab
+    -   Take a screenshot interactively -> Shift+Super+S
+    -   Toggle fullscreen mode -> Super+F
+    -   Custom Shortcuts:
+        -   Open Terminal (Command: `ptyxis &`) -> Super+T
+
 ## Extension Manager
 
 Download extensions:
