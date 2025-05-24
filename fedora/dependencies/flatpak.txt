@@ -4,7 +4,6 @@ com.mattjakeman.ExtensionManager
 com.spotify.Client
 com.usebottles.bottles
 com.vscodium.codium
-io.github.Foldex.AdwSteamGtk
 io.github.fabrialberio.pinapp
 io.github.giantpinkrobots.varia
 io.gitlab.theevilskeleton.Upscaler
