@@ -3,7 +3,7 @@ britesnow.vscode-toggle-quotes
 chanzhaoyu.svelte-5-snippets
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
-codeium.codeium
+ms-azuretools.vscode-containers
 csstools.postcss
 dbaeumer.vscode-eslint
 donjayamanne.githistory
