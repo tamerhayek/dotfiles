@@ -4,6 +4,7 @@ chanzhaoyu.svelte-5-snippets
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 ms-azuretools.vscode-containers
+codeium.codeium
 csstools.postcss
 dbaeumer.vscode-eslint
 donjayamanne.githistory
