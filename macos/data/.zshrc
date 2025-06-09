@@ -95,12 +95,21 @@ alias install='~/dotfiles/macos/scripts/install.sh'
 alias main='git switch main'
 alias staging='git switch staging'
 
-function convert-to-webm() {
+function convert-mov-to-webm() {
   if [ -n "$1" ]
     then
       ffmpeg -i "$1" -c:v libvpx-vp9 -c:a libvorbis "$1.webm"
     else
-      echo "Usage: convert-to-webm <filename>"
+      echo "Usage: convert-mov-to-webm <filename>"
+  fi
+}
+
+function convert-mp4-to-webm() {
+  if [ -n "$1" ]
+    then
+      ffmpeg -i "$1" -c:v libvpx-vp9 -b:v 2M -c:a libopus "$1.webm"
+    else
+      echo "Usage: convert-mp4-to-webm <filename>"
   fi
 }
 
