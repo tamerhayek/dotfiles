@@ -19,6 +19,7 @@ org.blender.Blender
 org.gimp.GIMP
 org.gnome.Decibels
 org.gnome.Showtime
+org.gnome.SoundRecorder
 org.inkscape.Inkscape
 org.kde.kdenlive
 org.localsend.localsend_app
