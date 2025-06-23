@@ -3,7 +3,6 @@ britesnow.vscode-toggle-quotes
 chanzhaoyu.svelte-5-snippets
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
-ms-azuretools.vscode-containers
 codeium.codeium
 csstools.postcss
 dbaeumer.vscode-eslint
@@ -15,6 +14,7 @@ github.vscode-pull-request-github
 inlang.vs-code-extension
 jeanp413.open-remote-ssh
 meganrogge.template-string-converter
+ms-azuretools.vscode-containers
 ms-playwright.playwright
 ms-python.debugpy
 ms-python.python
