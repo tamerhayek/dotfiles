@@ -10,6 +10,7 @@ docker-compose-plugin
 eza
 fastfetch
 fzf
+g++
 gcc
 git
 gnome-tweaks
