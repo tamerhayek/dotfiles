@@ -1,1 +1,2 @@
-cat $env:USERPROFILE/dotfiles/windows/dependencies/winget.txt | ForEach-Object { winget install --accept-source-agreements --accept-package-agreements --id $_ } && winget upgrade --all
+cat ~/dotfiles/windows/dependencies/winget.txt | ForEach-Object { echo ""; echo "Installing $_"; echo ""; winget install --accept-source-agreements --accept-package-agreements --id $_ };
+winget upgrade --all

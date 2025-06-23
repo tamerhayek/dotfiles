@@ -49,7 +49,7 @@ winget source update
 ### Install apps
 
 ```powershell
-cat ~/dotfiles/windows/dependencies/winget.txt | ForEach-Object { winget install --accept-source-agreements --accept-package-agreements --id $_ }
+cat ~/dotfiles/windows/dependencies/winget.txt | ForEach-Object { echo ""; echo "Installing $_"; echo ""; winget install --accept-source-agreements --accept-package-agreements --id $_ }
 ```
 
 Upgrade
