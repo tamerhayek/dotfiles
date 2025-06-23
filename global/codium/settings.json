@@ -7,7 +7,8 @@
 	"codeium.enableConfig": {
 		"*": true,
 		"markdown": true,
-		"postcss": true
+		"postcss": true,
+		"plaintext": true
 	},
 	// Editor
 	"editor.fontSize": 14,
