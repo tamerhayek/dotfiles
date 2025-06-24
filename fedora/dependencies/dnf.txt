@@ -2,7 +2,6 @@ akmod-nvidia
 bat
 btop
 containerd.io
-discord
 docker-buildx-plugin
 docker-ce
 docker-ce-cli

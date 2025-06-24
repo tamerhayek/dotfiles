@@ -17,13 +17,8 @@
 
 Download extensions:
 
--   Blur my Shell
+-   Tray Icons: Reloaded
 -   Clipboard History
--   Dash to Dock
--   Caffeine
--   Vitals
--   Media Controls
--   User Themes
 -   Color Picker
 
 Enable System Extensions:
