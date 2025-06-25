@@ -203,7 +203,7 @@ alias lt='eza --tree $eza_params'
 alias tree='eza --tree $eza_params'
 
 alias update="sudo dnf update -y && sudo flatpak update -y && sudo dnf autoremove"
-alias install="~/dotfiles/fedora/scripts/install.sh"
+alias install="~/dotfiles/archlinux/scripts/install.sh"
 
 alias main='git switch main'
 alias staging='git switch staging'
