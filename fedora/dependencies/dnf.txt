@@ -1,7 +1,9 @@
+acpid
 akmod-nvidia
 bat
 btop
 containerd.io
+dkms
 docker-buildx-plugin
 docker-ce
 docker-ce-cli
@@ -9,7 +11,6 @@ docker-compose-plugin
 eza
 fastfetch
 fzf
-g++
 gcc
 git
 gnome-tweaks
@@ -17,6 +18,14 @@ go
 grub-customizer
 kernel-devel
 kernel-headers
+libglvnd-devel
+libglvnd-glx
+libglvnd-opengl
+libva-utils
+make
+nvidia-vaapi-driver
+pkgconfig
+vdpauinfo
 wget
 xorg-x11-drv-nvidia-cuda
 zoxide
