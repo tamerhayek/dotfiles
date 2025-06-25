@@ -14,7 +14,7 @@ fzf
 gimp
 git
 go
-homebrew/cask/docker
+homebrew/cask/docker-desktop
 homebrew/cask/transmission
 inkscape
 linearmouse
