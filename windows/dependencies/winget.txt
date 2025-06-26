@@ -18,7 +18,6 @@ Microsoft.PowerShell
 Microsoft.WindowsTerminal
 Mojang.MinecraftLauncher
 Mozilla.Firefox
-Nodist.Nodist
 OBSProject.OBSStudio
 Ookla.Speedtest.Desktop
 Oracle.JDK.23
