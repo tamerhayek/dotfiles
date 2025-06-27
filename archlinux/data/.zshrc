@@ -202,20 +202,25 @@ alias la='eza -lbhHigUmuSa'
 alias lt='eza --tree $eza_params'
 alias tree='eza --tree $eza_params'
 
-alias update="sudo dnf update -y && sudo flatpak update -y && sudo dnf autoremove"
-alias install="~/dotfiles/archlinux/scripts/install.sh"
+alias update="sudo pacman -Sy && yay -S && flatpak update -y"
 
-alias main='git switch main'
-alias staging='git switch staging'
+alias codium="vscodium"
 
-alias codium="flatpak run com.vscodium.codium "
-
-function convert-to-webm() {
+function convert-mov-to-webm() {
   if [ -n "$1" ]
     then
       ffmpeg -i "$1" -c:v libvpx-vp9 -c:a libvorbis "$1.webm"
     else
-      echo "Usage: convert-to-webm <filename>"
+      echo "Usage: convert-mov-to-webm <filename>"
+  fi
+}
+
+function convert-mp4-to-webm() {
+  if [ -n "$1" ]
+    then
+      ffmpeg -i "$1" -c:v libvpx-vp9 -b:v 2M -c:a libopus "$1.webm"
+    else
+      echo "Usage: convert-mp4-to-webm <filename>"
   fi
 }
 
@@ -229,3 +234,10 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="/home/tamibyte/.local/share/fnm:$PATH"
   eval "`fnm env`"
 fi
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/tamibyte/.dart-cli-completion/zsh-config.zsh ]] && . /home/tamibyte/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+fastfetch

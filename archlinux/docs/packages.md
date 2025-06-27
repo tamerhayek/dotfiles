@@ -3,7 +3,7 @@
 ## Pacman
 
 ```bash
-sudo pacman -S - < ~/dotfiles/linux/archlinux/dependencies/pacman.txt
+sudo pacman -Sy - < ~/dotfiles/linux/archlinux/dependencies/pacman.txt
 ```
 
 ## Yay
@@ -15,7 +15,7 @@ makepkg -si
 ```
 
 ```bash
-yay - < ~/dotfiles/archlinux/dependencies/yay.txt
+yay -S - < ~/dotfiles/archlinux/dependencies/yay.txt
 ```
 
 ## Flatpak

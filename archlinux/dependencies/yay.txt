@@ -1,0 +1,7 @@
+brave-bin
+grub-customizer
+localsend
+onlyoffice-bin
+spotify
+vscodium-bin
+zoom
