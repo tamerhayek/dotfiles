@@ -9,7 +9,7 @@ Configure keybindings
 
 ```bash
 rm -f -- ~/.config/VSCodium/User/keybindings.json
-ln -s ~/dotfiles/fedora/data/codium/keybindings.json ~/.config/VSCodium/User/keybindings.json
+ln -s ~/dotfiles/archlinux/data/codium/keybindings.json ~/.config/VSCodium/User/keybindings.json
 ```
 
 Install extensions
