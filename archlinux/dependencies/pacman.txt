@@ -2,6 +2,7 @@ audacity
 bat
 blender
 btop
+cups
 discord
 docker
 docker-compose
@@ -9,12 +10,15 @@ eza
 fastfetch
 fzf
 gimp
+hplip
 inkscape
+kdeconnect
 kdenlive
 mission-center
 obs-studio
 speedtest-cli
 steam
+system-config-printer
 telegram-desktop
 unzip
 vlc
