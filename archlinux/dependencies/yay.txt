@@ -1,5 +1,7 @@
+bottles
 brave-bin
 grub-customizer
+heroic-games-launcher-bin
 localsend
 onlyoffice-bin
 spotify

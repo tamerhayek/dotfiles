@@ -203,6 +203,7 @@ alias lt='eza --tree $eza_params'
 alias tree='eza --tree $eza_params'
 
 alias update="sudo pacman -Sy && yay -S && flatpak update -y"
+alias cleanup="sudo pacman -Rcs $(pacman -Qtdq) && yay -Sc"
 
 alias codium="vscodium"
 

@@ -3,7 +3,13 @@
 ## Pacman
 
 ```bash
-sudo pacman -Sy - < ~/dotfiles/linux/archlinux/dependencies/pacman.txt
+sudo pacman -Sy --needed - < ~/dotfiles/archlinux/dependencies/pacman.txt
+```
+
+Cleanup pacman and yay:
+
+```bash
+sudo pacman -Rcs $(pacman -Qtdq) && yay -Sc
 ```
 
 ## Yay
