@@ -12,6 +12,7 @@ fastfetch
 fzf
 gimp
 go
+gwenview
 hplip
 inkscape
 kamoso
