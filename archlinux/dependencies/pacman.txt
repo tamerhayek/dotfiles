@@ -5,6 +5,7 @@ btop
 cups
 discord
 docker
+docker-buildx
 docker-compose
 eza
 fastfetch
