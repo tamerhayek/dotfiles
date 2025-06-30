@@ -21,6 +21,7 @@ kdenlive
 kmail
 krecorder
 mission-center
+nextcloud-client
 obs-studio
 okular
 skanpage
