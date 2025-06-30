@@ -30,6 +30,7 @@ steam
 system-config-printer
 telegram-desktop
 tesseract-data-ita
+unrar
 unzip
 vlc
 yakuake
