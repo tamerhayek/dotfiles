@@ -16,6 +16,7 @@ gwenview
 hplip
 inkscape
 kamoso
+kcolorchooser
 kdeconnect
 kdenlive
 kmail
