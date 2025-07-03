@@ -2,6 +2,7 @@ audacity
 bat
 blender
 btop
+converseen
 cups
 discord
 docker
