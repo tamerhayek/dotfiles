@@ -3,6 +3,7 @@ brave-bin
 grub-customizer
 heroic-games-launcher-bin
 localsend
+minecraft-launcher
 onlyoffice-bin
 spotify
 vscodium-bin
