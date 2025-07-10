@@ -32,3 +32,4 @@ Valve.Steam
 VLC.VideoLAN.VLC
 VSCodium.VSCodium
 WhatsApp.WhatsApp
+Zoom.Zoom
