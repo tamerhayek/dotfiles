@@ -13,6 +13,7 @@ Git.Git
 GOG.Galaxy
 HandBrake.HandBrake
 HEIF Image Extensions
+Iterate.MountainDuck
 LocalSend.LocalSend
 Logitech.OptionsPlus
 Microsoft.PowerShell
