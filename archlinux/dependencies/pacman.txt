@@ -30,6 +30,7 @@ skanpage
 speedtest-cli
 steam
 system-config-printer
+proton-vpn-gtk-app
 telegram-desktop
 tesseract-data-ita
 unrar
