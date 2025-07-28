@@ -27,6 +27,9 @@ nextcloud
 fnm
 openjdk
 pika
+homebrew/cask/proton-mail
+homebrew/cask/protonvpn
+homebrew/cask/proton-drive
 python3
 python-tk
 rectangle
