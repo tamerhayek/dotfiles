@@ -23,6 +23,7 @@ kdenlive
 kmail
 krecorder
 mission-center
+mgba-qt
 nextcloud-client
 obs-studio
 okular

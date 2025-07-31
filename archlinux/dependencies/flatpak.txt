@@ -1,0 +1,2 @@
+flathub org.azahar_emu.Azahar
+info.cemu.Cemu
