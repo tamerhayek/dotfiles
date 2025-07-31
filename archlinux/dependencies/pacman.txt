@@ -10,6 +10,7 @@ docker-buildx
 docker-compose
 eza
 fastfetch
+fragments
 fzf
 gimp
 go
