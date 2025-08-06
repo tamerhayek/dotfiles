@@ -1,3 +1,4 @@
 npm@latest
 corepack@latest
 sv@latest
+typescript@latest
