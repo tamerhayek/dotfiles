@@ -238,6 +238,9 @@ if [ -d "$FNM_PATH" ]; then
   eval "`fnm env`"
 fi
 
+# go
+export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
+
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
 [[ -f /home/tamibyte/.dart-cli-completion/zsh-config.zsh ]] && . /home/tamibyte/.dart-cli-completion/zsh-config.zsh || true
