@@ -28,6 +28,7 @@ mgba-qt
 nextcloud-client
 obs-studio
 okular
+postgresql
 skanpage
 speedtest-cli
 steam
