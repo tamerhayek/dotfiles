@@ -30,6 +30,7 @@ pika
 homebrew/cask/proton-mail
 homebrew/cask/protonvpn
 homebrew/cask/proton-drive
+homebrew/cask/proton-pass
 python3
 python-tk
 rectangle
