@@ -207,8 +207,6 @@ alias autoremove="sudo pacman -Rcs $(pacman -Qtdq) && yay -Sc"
 
 alias codium="vscodium"
 
-alias timer="arttime --nolearn -a kissingcats -b kissingcats2 -t \"Since we found love within, we don't bother rats - Wise cats\" --ac 3"
-
 function convert-mov-to-webm() {
   if [ -n "$1" ]
     then

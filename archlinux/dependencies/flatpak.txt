@@ -1,2 +1,8 @@
-flathub org.azahar_emu.Azahar
-info.cemu.Cemu
+com.brave.Browser
+com.nextcloud.desktopclient.nextcloud
+com.protonvpn.www
+io.github.pieterdd.RcloneShuttle
+me.proton.Mail
+me.proton.Pass
+org.onlyoffice.desktopeditors
+us.zoom.Zoom

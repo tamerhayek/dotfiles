@@ -1,12 +1,3 @@
-arttime
-bottles
-brave-bin
 grub-customizer
-heroic-games-launcher-bin
-localsend
-melonds
 minecraft-launcher
-onlyoffice-bin
-spotify
 vscodium-bin
-zoom

@@ -19,16 +19,14 @@ kamoso
 kcolorchooser
 krecorder
 mission-center
-mgba-qt
-nextcloud-client
 obs-studio
 okular
 postgresql
+rclone
 skanpage
 speedtest-cli
 steam
 system-config-printer
-proton-vpn-gtk-app
 telegram-desktop
 tesseract-data-ita
 unrar
