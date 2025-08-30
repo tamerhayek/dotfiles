@@ -1,13 +1,12 @@
-audacity
 bat
 blender
 btop
-converseen
 cups
 discord
 docker
 docker-buildx
 docker-compose
+exfat-utils
 eza
 fastfetch
 fragments
@@ -16,12 +15,8 @@ gimp
 go
 gwenview
 hplip
-inkscape
 kamoso
 kcolorchooser
-kdeconnect
-kdenlive
-kmail
 krecorder
 mission-center
 mgba-qt

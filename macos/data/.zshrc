@@ -90,10 +90,6 @@ alias lt='eza --tree $eza_params'
 alias tree='eza --tree $eza_params'
 
 alias update='brew update && brew upgrade && xargs brew install <~/dotfiles/macos/dependencies/brew.txt && brew cleanup && brew autoremove && mas outdated && mas upgrade'
-alias install='~/dotfiles/macos/scripts/install.sh'
-
-alias main='git switch main'
-alias staging='git switch staging'
 
 function convert-mov-to-webm() {
   if [ -n "$1" ]
@@ -136,3 +132,5 @@ fpath=(/Users/tamibyte/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+fastfetch

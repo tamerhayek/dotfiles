@@ -1,7 +1,14 @@
-OBS Studio
-Adobe Illustrator
-Adobe Premiere Pro
 Adobe After Effects
+Adobe Audition
+Adobe Illustrator
 Adobe Media Encoder
 Adobe Photoshop
-Adobe Audition
+Adobe Premiere Pro
+DaVinci Resolve
+HP Print & Support
+OBS Studio
+Proton Authenticator
+Speedtest
+Telegram
+WhatsApp
+xCode

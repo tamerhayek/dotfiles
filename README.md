@@ -1,6 +1,6 @@
 # dotfiles
 
-Config Dotfiles for every machine
+A collection of dotfiles for various operating systems.
 
 ## Installation
 
@@ -10,4 +10,4 @@ Clone [dotfiles](https://github.com/tamerhayek/dotfiles) inside your home direct
 git clone https://github.com/tamerhayek/dotfiles
 ```
 
-Follow the instructions in the `setup.md` file, based on the OS.
+Follow the instructions in the OS folder.
