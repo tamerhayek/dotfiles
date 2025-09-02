@@ -22,7 +22,6 @@ linearmouse
 localsend
 maccy
 mas
-mountain-duck
 neohtop
 nextcloud
 fnm
