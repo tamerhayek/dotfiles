@@ -245,3 +245,9 @@ export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 ## [/Completion]
 
 fastfetch
+# bun completions
+[ -s "/home/tamibyte/.bun/_bun" ] && source "/home/tamibyte/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
