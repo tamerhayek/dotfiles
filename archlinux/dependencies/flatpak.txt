@@ -4,5 +4,6 @@ com.protonvpn.www
 io.github.pieterdd.RcloneShuttle
 me.proton.Mail
 me.proton.Pass
+org.localsend.localsend_app
 org.onlyoffice.desktopeditors
 us.zoom.Zoom
