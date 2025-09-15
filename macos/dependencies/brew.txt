@@ -20,8 +20,6 @@ homebrew/cask/transmission
 inkscape
 linearmouse
 localsend
-maccy
-mas
 neohtop
 nextcloud
 fnm
