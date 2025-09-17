@@ -89,7 +89,7 @@ alias la='eza -lbhHigUmuSa'
 alias lt='eza --tree $eza_params'
 alias tree='eza --tree $eza_params'
 
-alias update='brew update && brew upgrade && xargs brew install <~/dotfiles/macos/dependencies/brew.txt && brew cleanup && brew autoremove && mas outdated && mas upgrade'
+alias update='brew update && brew upgrade && xargs brew install <~/dotfiles/macos/dependencies/brew.txt && brew cleanup && brew autoremove'
 
 function convert-mov-to-webm() {
   if [ -n "$1" ]
